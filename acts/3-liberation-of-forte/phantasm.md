@@ -13,7 +13,7 @@ The Phantasm is how a rune speaks of itself without being run. The Grimoire read
 | `main` | the rune's name | `--create-rune` |
 | `user` | who shapes it | you |
 | `note` | its purpose, one sentence | you |
-| `mark` | `BETA`, `VOID`, `DEPRECATED` ([marks](../../glossary.md#marks-and-signs)) | `--create-rune` (BETA), then you |
+| `mark` | `VOID`, `BETA`, `EXIST` ([marks](../../glossary.md#marks-and-signs)) | `--create-rune` (BETA), then you |
 | `link` | the runes it leans on: `[rune, parts, version]` | `--phantasm-fix-link` |
 | `node` | every constant, global, function and method, with its `#NOTE` | `--phantasm-fix-node` + `--phantasm-fix-note` |
 | `origin` | the rune's folder (`__DIR__`) | `--create-rune` — keep it |
@@ -74,6 +74,6 @@ php cast sentinel --phantasm-up=ledger
 **Known issue:** after `.9` comes `.10` (`0.9` → `0.10`), but the footer adds versions as numbers, so `0.10` counts as `0.1` and the footer drops (`1.13.21` → `1.12.41`). Until this is fixed, plan your versions around it.
 
 ## The mark
-`BETA` while it settles. Change it by hand when it does: `VOID` for a rune that is held back or returns nothing on purpose, `DEPRECATED` when it is on its way out. The Grimoire warns about BETA and DEPRECATED.
+`BETA` while it settles. Change it by hand: `VOID` for a rune that is held back or returns nothing on purpose, `EXIST` when it is whole and stable — the opposite of VOID. A rune moves VOID → BETA → EXIST. The Grimoire warns about BETA.
 
 Next: [Use Your Rune](use-your-rune.md).

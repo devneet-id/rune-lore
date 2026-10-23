@@ -4,7 +4,7 @@
 
 <!-- status: draft · sources: runes/minister.md, Minister/Entity.php · tested with a local familiar -->
 
-A **familiar** is a spirit that answers. Minister carries your question to it and brings the answer back into the flow. Minister is still being shaped — its Phantasm mark is `DEVELOPMENT` today, and will follow the [VOID](../../glossary.md#marks-and-signs) pattern.
+A **familiar** is a spirit that answers. Minister carries your question to it and brings the answer back into the flow. Minister is still being shaped — its Phantasm mark is `DEVELOPMENT` today, which is not a real mark; it will move to one of the three [marks](../../glossary.md#marks-and-signs) (VOID, BETA, EXIST).
 
 Minister reads its familiar through Keeper, so **Keeper must be engraved**.
 

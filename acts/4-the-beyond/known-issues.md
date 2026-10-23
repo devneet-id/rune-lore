@@ -26,7 +26,8 @@ Rune is not finished. These are the issues found by the trials and by reading th
 ## Contract and text
 - Some `#NOTE`s are inaccurate: Keeper `begin`/`end`, generic `end()`, "placeholder" for `cipher()` / `forger()`. Fix the `#NOTE`, then `--phantasm-fix-note`.
 - `_arise()` hooks remain in the Manifests of Cipher, Forger, Specter, Weaver and Whisper — never called (legacy).
-- Minister still has the mark `DEVELOPMENT` (should become VOID).
+- Minister still has the mark `DEVELOPMENT`, which is not a mark (should be VOID, BETA or EXIST).
+- The Grimoire header still says *Carefull use rune BETA/DEPRECATED* (`@bindrune/chanter/grimoire/header.txt`); DEPRECATED is not a mark.
 - `composer.json` `support` links point to `github.com/devneet/rune`; the repo is `devneet-id/rune`.
 - Awakening template headers use old Act labels ("Act. 1 – Understanding Its Flow", "Act. 3", "THE BEYOND Act. 1") — to align with the [Acts](../../README.md).
 

@@ -23,7 +23,7 @@ These are not style tips. Every tool in Rune — Sentinel, Grimoire, the footer,
 ## The contract
 9. **Every node has a `#NOTE`** on the line above it in the code — the Phantasm `node` list mirrors these notes (`sentinel --phantasm-fix-node`, `--phantasm-fix-note`).
 10. **Every change raises the Phantasm version** of the rune that changed. See [Versioning](versioning.md).
-11. **Marks are VOID, BETA, DEPRECATED.** VOID = empty: held back because dangerous, or voided until done. There is **no DEVELOPMENT** mark; Minister still carries it and will move to VOID.
+11. **Marks are VOID, BETA, EXIST.** VOID = empty: held back because dangerous, or voided until done. BETA = being shaped. EXIST = the opposite of VOID: whole and stable. There is **no DEVELOPMENT and no DEPRECATED** mark; Minister still carries DEVELOPMENT.
 
 ## Liberation
 12. **A liberation rune never replaces an origin rune.** The loader is appended, `--create-rune` refuses origin names, and Sentinel skips `@liberations/Whisper/` with a warning.

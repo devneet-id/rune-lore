@@ -42,7 +42,7 @@ Keeps a small ledger of income and expense in one flow.
       The currency written before every amount.
     …
 ```
-The header warns *Carefull use rune BETA/DEPRECATED* — your rune is BETA until you mark it otherwise.
+The header warns *Carefull use rune BETA/DEPRECATED* — your rune is BETA until you mark it `EXIST`. (DEPRECATED in that header is not a mark anymore.)
 
 ## It counts
 - `aether_list_runes()` now ends with `Ledger`.

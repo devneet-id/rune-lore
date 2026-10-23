@@ -20,8 +20,8 @@ Old names still hide in comments, Altar and old artefacts. When you meet one, th
 ## Why not React or Tailwind → Exura
 Integrating React and Tailwind was tried. Both are ecosystems of their own, and Rune stopped being simple. Exura was born instead: a small toolkit that fits after [Crafter](../2-understanding-its-flow/exura.md).
 
-## Why VOID and not DEVELOPMENT
-VOID already covers both roles: a function held back because it is dangerous, and a function voided until it is finished. "Development" means developing a rune, not a mark. DEVELOPMENT was a search for VOID's opposite; it is dropped.
+## Why VOID, BETA, EXIST
+VOID already covers both roles: a function held back because it is dangerous, and a function voided until it is finished. DEVELOPMENT was a search for VOID's opposite — that opposite is **EXIST**: whole and stable. BETA sits between. "Development" means developing a rune, not a mark, so DEVELOPMENT is dropped; DEPRECATED is not a mark either.
 
 ## Why liberation never replaces an origin rune
 Before T42 the liberation loader was prepended: a full copy in `@liberations/Whisper/` silently replaced the real Whisper. Now the loader is appended, origin names are refused, and the rule is: need another version → a new name.

@@ -22,4 +22,4 @@ Symbols: `λ` time · `ϟ` stopwatch · `[ϻ]` manifest · `[ͱ]` entity.
 
 ## Notes
 - Without Keeper there is no arcane: `--arcane` says *No arcane recorded yet* and asks you to engrave Keeper.
-- Grimoire warns about runes marked `BETA` or `DEPRECATED`.
+- Grimoire warns about runes marked `BETA` (its header still names DEPRECATED, which is no longer a mark — see [marks](../glossary.md#marks-and-signs)).

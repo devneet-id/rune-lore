@@ -76,8 +76,9 @@ Every rune is made of these five files. → [Runes](runes/README.md)
 |---|---|
 | **VOID** | Empty — nothing. Two roles: a function held back because it is dangerous and returns nothing, or a function voided until its development is done. The default mark of `Rune\Phantasm`. |
 | **BETA** | New and still settling. The default of a rune made by `create-rune`. |
-| **DEPRECATED** | On its way out. The Grimoire warns: use with care. |
-| ~~DEVELOPMENT~~ | Still used by Minister, but **to be dropped**: VOID already covers both roles. "Development" means developing a *rune*, not a mark. |
+| **EXIST** | The opposite of VOID: whole, stable, safe to use. |
+
+A rune moves **VOID → BETA → EXIST**. There are only these three marks. DEVELOPMENT (still on Minister) and DEPRECATED (still named in the Grimoire header) are not marks — "development" means developing a *rune*.
 
 ### Arcane states — by the time of one step
 | State | From |
