@@ -2,7 +2,7 @@
 
 > One run, from the first rune awakened to the last line of the footer.
 
-<!-- status: draft · sources: Rune/Manifest.php, Aether/Manifest.php, Chanter/Manifest.php, Keeper/Manifest.php, runes/aether.md, runes/chanter.md, runes/keeper.md -->
+<!-- status: draft -->
 
 A runite is read from top to bottom, once. Nothing runs by itself: runes are loaded, the flow is opened, casts are only *registered* — and the real work happens when the flow is closed.
 

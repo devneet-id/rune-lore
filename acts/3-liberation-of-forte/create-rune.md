@@ -2,7 +2,7 @@
 
 > Sentinel shapes the empty rune for you.
 
-<!-- status: draft · sources: runites/sentinel.md, @bindrune/chanter/sentinel (cast.php, rune--*.txt) · tested in rune-dev/scenario (scratch) -->
+<!-- status: draft -->
 
 A rune begins as a name and five empty files. Sentinel carves them; you engrave them.
 

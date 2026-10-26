@@ -2,23 +2,18 @@
 
 > From an issue to a merged change.
 
-<!-- status: draft · sources: rune CONTRIBUTING.md, rune-dev/notes/rune-pr.md, rune-tasks.md (way of working), rune README (laws) -->
+<!-- status: draft -->
 
 Anyone who keeps the laws can keep Rune. You do not need its first creator — you need a trial that proves the problem, a change that keeps the contract, and a clear pull request.
 
 ## 1. Set up
 - PHP 8.1 or newer, Composer, Git.
-- Fork `devneet-id/rune`, clone it next to a workshop folder:
-```
-your-folder/
-├── rune/        your fork
-└── rune-dev/    composer.json → "Rune\\": "../rune/"
-```
-- `composer dump-autoload` in `rune-dev`. Make one normal runite (Awakening) and one in liberation mode (`Rune\Ethereal::liberation();`) — see [The Workshop](the-workshop.md).
+- Fork `devneet-id/rune` and clone it next to a workshop folder of your own that loads it from disk — see [The Workshop](the-workshop.md).
+- In the workshop, make one normal runite (Awakening) and one in liberation mode (`Rune\Ethereal::liberation();`).
 
 ## 2. Find the work
 - [Known Issues](known-issues.md) — bugs with their files.
-- A failing trial in `rune-dev/scenario`.
+- A failing trial in your workshop.
 - A Phantasm that no longer matches the code (`grimoire --rune=X` vs the source).
 - An issue on GitHub. Open one if none exists: what you ran, what you saw, what you expected.
 
@@ -46,7 +41,7 @@ php liberate grimoire --rune=Whisper                 # read it back
 `--phantasm-fix=Whisper` runs node + link + note + version at once.
 
 ## 6. Test again
-Your trial passes, and nothing else broke: `php cast trials` in `scenario/coverage`.
+Your trial passes, and nothing else broke: run every trial in your workshop again.
 
 ## 7. Pull request
 - Branch from `1.x`, one commit per change ([Release](release.md) has the commit format).
@@ -57,15 +52,15 @@ Your trial passes, and nothing else broke: `php cast trials` in `scenario/covera
 What changes, in two sentences.
 
 ## Commits
-- fix(chanter): ... (issue/task)
+- fix(chanter): ... (issue)
 
 ## Why
 | # | Problem |
 |---|---|
 
 ## Test
-- php cast test in scenario/... → n/n
-- php cast trials → n/n
+- php cast test → n/n (the trial you added)
+- every other trial → n/n
 ```
 - Include the trial (or the test cast) so the reviewer can run it.
 

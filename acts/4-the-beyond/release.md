@@ -2,7 +2,7 @@
 
 > From a change to Packagist.
 
-<!-- status: draft · sources: rune-dev/notes/rune-commit.md, rune-release.md, rune-tasks.md (commit rules), rune-pr.md -->
+<!-- status: draft -->
 
 A release is the footer made public. Commit the changes, tag the version the footer shows, publish it on GitHub — Packagist does the rest.
 

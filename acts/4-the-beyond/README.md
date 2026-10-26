@@ -5,7 +5,7 @@
 **Runes in this Act:** all of them — origin and your own
 **You learn:** how Rune is built inside, the laws it keeps, how to test, version and release it, how to contribute — and where it goes next.
 
-Until now you used Rune. From here you **keep** it. Every page in this Act points at real files in the `rune` repo and the `rune-dev` workshop, so you can check each claim yourself.
+Until now you used Rune. From here you **keep** it. Every page in this Act points at real files in the `rune` repo, so you can check each claim yourself.
 
 ## I · Inside Rune
 1. [Anatomy](anatomy.md) — the package from the inside
@@ -13,7 +13,7 @@ Until now you used Rune. From here you **keep** it. Every page in this Act point
 3. [Decisions](decisions.md) — why things are the way they are
 
 ## II · Keeping Rune
-4. [The Workshop](the-workshop.md) — `rune-dev`: live, scenario, trials, coverage
+4. [The Workshop](the-workshop.md) — your own bench: scenarios and trials
 5. [Versioning](versioning.md) — Phantasm versions, the footer, the tag
 6. [Release](release.md) — commit, tag, GitHub, Packagist
 7. [Known Issues](known-issues.md) — what is still open
@@ -31,7 +31,7 @@ Until now you used Rune. From here you **keep** it. Every page in this Act point
 ## The cycle you will repeat
 ```
 find (issue, trial, known issue)
-  → prove it   (a trial in rune-dev/scenario)
+  → prove it   (a trial in your workshop)
   → change it  (Entity first, Manifest only forwards, #NOTE above every node)
   → contract   (sentinel --phantasm-fix / --phantasm-up)
   → test       (php cast test, php cast trials)

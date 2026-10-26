@@ -2,7 +2,7 @@
 
 > Aether is the flow under the app. It opened the run, it will close it — and it can tell you what happened in between.
 
-<!-- status: draft · sources: runes/aether.md -->
+<!-- status: draft -->
 
 → Reference: [Aether](../../runes/aether.md)
 
@@ -22,7 +22,7 @@ Chanter::cast('peek', function() {
 [√] Added #1
 ///////////////////////////////////
  D I A G N O S T I C
- 39  /root/rune/Aether/Manifest.php
+ 39  /home/you/app/vendor/devneet/rune/Aether/Manifest.php
 
 array(1) » {
 │ ♦ 0::string(8) » "Buy milk"

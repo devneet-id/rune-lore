@@ -34,5 +34,3 @@ Chanter::cast('box --new --text --read --backup --restore', function() {
 - `Forger::item($path, $text)` writes, `Forger::item($path)` reads.
 - `Forger::move()` **copies** (`item` = file, `repo` = folder). To move, `Forger::clean()` the source after.
 - `Forger::clean($path, true)` removes a folder with everything inside.
-
-**Full, tested example:** `rune-dev/scenario/03-files`

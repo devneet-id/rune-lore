@@ -2,7 +2,7 @@
 
 > Any `.rune` online can become a template.
 
-<!-- status: draft · sources: runites/awakening.md, runites/artefact.md, @bindrune/awakening/src, Anwar's plan (2026-10) -->
+<!-- status: draft -->
 
 An artefact is a runite that can travel. Today four of them ship inside Rune as the Awakening templates. The plan is to let any artefact anywhere become a starting point. **This is planned — not built yet.**
 

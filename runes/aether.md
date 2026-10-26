@@ -107,7 +107,7 @@ Globals — state that changes as the flow goes on.
 
 ## Notes
 - `aether_list_runes()` lists the ten origin runes, plus the runes in `@liberations/` when the runite is in liberation mode. Their Phantasm versions are summed into the footer `Version=`.
-- `AETHER_REPO` is the folder the command is run from (`getcwd()`), and `AETHER_FILE` the runite as typed. Run a runite from its own folder (see T48 in rune-dev).
+- `AETHER_REPO` is the folder the command is run from (`getcwd()`), and `AETHER_FILE` the runite as typed. Run a runite from its own folder.
 - Constants `AETHER_LOGS`, `AETHER_ECHOES_RUNE`, `AETHER_ECHOES_INFORMATION`, `AETHER_ECHOES_ARCANE(S)`, `AETHER_ECHOES_ARTEFACT` are legacy — Keeper owns the echoes now.
 
 ---

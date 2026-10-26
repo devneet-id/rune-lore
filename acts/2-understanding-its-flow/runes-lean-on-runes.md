@@ -2,7 +2,7 @@
 
 > No rune stands alone.
 
-<!-- status: draft · sources: */Phantasm.php ($link), Aether/Entity.php (aether_has_entity, aether_arised, aether_exit), grimoire --rune -->
+<!-- status: draft -->
 
 Each rune has one purpose. To do it, it borrows the hands of others: Keeper remembers by writing files with Forger, Crafter bundles with Weaver's templates, Aether speaks its footer through Whisper. The Phantasm writes these bonds down.
 

@@ -2,7 +2,7 @@
 
 > Composer brings the runes. Awakening writes your first runite.
 
-<!-- status: draft · sources: rune README (Awakening), Rune/Ethereal.php, @bindrune/awakening/cast.php, runites/awakening.md, tested in rune-dev -->
+<!-- status: draft -->
 
 Awakening is the first step out of the void. You start with an empty file and one call; Awakening fills the file with a runite.
 

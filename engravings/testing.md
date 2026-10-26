@@ -29,5 +29,3 @@ Chanter::cast('double --n', fn() => 2 * (int) Chanter::spell('n'));
 - `Whisper::drain(fn, true)` catches what a cast prints, so you can check it.
 - `Chanter::cast('x --a=1')()` returns what the cast returns.
 - Pass spaces in spell values as `%20` when casting from code.
-
-**Full, tested example:** `rune-dev/scenario/trial.php` — a shared helper (`trial`, `trial_cast`, `trial_report`) used by every scenario

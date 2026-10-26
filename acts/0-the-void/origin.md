@@ -2,7 +2,7 @@
 
 > At first, humans did not know anything. By looking, writing and growing, they came to understand.
 
-<!-- status: draft · sources: rune README (Paradigm), rune-paradigm.md §1–2, §11 -->
+<!-- status: draft -->
 
 Rune begins in the void — before any code, before any name. Everything you meet in this lore is named for the role it plays in that world, not with a generic word. Learn the name once, and the code reads like a story.
 

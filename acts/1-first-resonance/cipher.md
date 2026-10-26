@@ -2,7 +2,7 @@
 
 > Cipher keeps the secrets of the system — and gives every thing a name of its own.
 
-<!-- status: draft · sources: runes/cipher.md, scenario/02-notes, scenario/04-vault -->
+<!-- status: draft -->
 
 → Reference: [Cipher](../../runes/cipher.md)
 

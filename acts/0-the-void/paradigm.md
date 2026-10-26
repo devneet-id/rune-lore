@@ -2,7 +2,7 @@
 
 > Runes are the core. Runites are what you build from them.
 
-<!-- status: draft · sources: rune-paradigm.md §3–6, rune README (Origin Runes, Laws), README (Runes and Runites) -->
+<!-- status: draft -->
 
 The only thing that never changes in Rune is its paradigm. Everything else is free.
 

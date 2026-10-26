@@ -2,7 +2,7 @@
 
 > Many source files become one distributable file.
 
-<!-- status: draft · sources: Crafter/Entity.php, Crafter/weaver/*.txt, Forger/Manifest.php (scan), engravings/bundling.md -->
+<!-- status: draft -->
 
 You write in many small files — one for the look, one for the logic, one for the words. The world wants one file it can open, require or upload. Bundling is how a runite carries the many into the one.
 

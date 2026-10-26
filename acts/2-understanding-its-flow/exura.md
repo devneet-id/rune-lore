@@ -2,7 +2,7 @@
 
 > A simple toolkit for the web, born after Crafter.
 
-<!-- status: draft · sources: rune-lore.md (Exura), @bindrune/awakening/src/Website+with+Exura*.rune (runite + shards, tested by awakening), Crafter/Entity.php -->
+<!-- status: draft -->
 
 Once you can bundle, you start to build websites — and a website wants a toolkit. Rune could have taken React or Tailwind, but each is a world of its own; bound into Rune they made things heavy instead of simple. So **Exura** was born: a small toolkit made to be bundled by Crafter, in the same spirit as the runes.
 

@@ -2,7 +2,7 @@
 
 > Several apps in one folder, each with its own memory.
 
-<!-- status: draft · sources: scenario/06-multicast, engravings/many-runites.md, scratch runites cast + wallet · tested in rune-dev/scenario -->
+<!-- status: draft -->
 
 One folder can hold many runites. Each is its own world — its own casts, its own `AETHER_FILE`, its own memory — while they share the folder's `vendor/` and `@liberations/`.
 
@@ -45,5 +45,3 @@ Inside **one** runite you do not need this — `Chanter::cast('x --a=1')()` retu
 - Two audiences (a user app and an admin tool) → two runites.
 - Two memories that must never mix → two runites.
 - Shared logic → not a runite: a [rune](engrave-a-rune.md) both runites invoke.
-
-**Full, tested example:** `rune-dev/scenario/06-multicast`

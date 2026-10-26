@@ -2,7 +2,7 @@
 
 > Work beyond the main flow.
 
-<!-- status: draft · sources: runes/specter.md, Specter/Entity.php, Specter/Manifest.php · tested in rune-dev/scenario (scratch) -->
+<!-- status: draft -->
 
 A flow begins, does its work and ends. Specter is what stays when it ends — a **soul** that outlives the run — and what moves beside it: a cast in another window, a **seer** that keeps watching, a server that keeps serving.
 
@@ -85,6 +85,6 @@ Chanter::cast('serve', function() {
 
 ## Remember
 - No Keeper, no soul: Specter writes everything in `.echoes/<runite>/`.
-- Run the runite from its own folder ([T48](nested-runites.md)).
+- Run the runite from its own folder ([why](nested-runites.md)).
 
 → Reference: [runes/specter.md](../../runes/specter.md)

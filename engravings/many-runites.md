@@ -31,5 +31,3 @@ Chanter::cast('chain --n', function() {
 - Each runite is its own world: its own casts, `AETHER_FILE`, and memory in `.echoes/<runite>/`.
 - Across runites, call the other file with PHP and read its answer (a line starting with `=>`).
 - Inside one runite, `Chanter::cast('x --a=1')()` runs a cast and returns its value.
-
-**Full, tested example:** `rune-dev/scenario/06-multicast` (runites `cast`, `ember`, `frost`)

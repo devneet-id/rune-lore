@@ -2,7 +2,7 @@
 
 > The Manifest is the face; the rune is deeper.
 
-<!-- status: draft · sources: Rune/Manifest.php, Aether/Ether.php, Keeper/Ether.php, Chanter/Essence.php, Cipher/Entity.php, Aether/Entity.php, runes/*.md -->
+<!-- status: draft -->
 
 Until now you called runes by their face: `Forger::item()`, `Whisper::echo()`. Behind every face are three more layers you awakened yourself — **Ether**, **Essence** and **Entity**. They are open to your runite too.
 

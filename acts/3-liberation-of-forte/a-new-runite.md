@@ -2,7 +2,7 @@
 
 > Engrave an app from nothing — no template.
 
-<!-- status: draft · sources: runites/README.md (skeleton), rune-cookbook.md, scratch runite wallet · tested in rune-dev/scenario (scratch) -->
+<!-- status: draft -->
 
 Awakening gave you a runite from an artefact. Now you start from an empty file, the way the built-in runites were made. We engrave **wallet**: a ledger that remembers — Ledger counts, Keeper keeps.
 
@@ -63,7 +63,6 @@ Aether::begin();
 Chanter::begin();
 Keeper::begin();
 
-
 // Ledger lives in one flow; Keeper carries its entries to the next
 function wallet_load() {
   foreach ((array) Keeper::item('entries') as $entry) {
@@ -75,7 +74,6 @@ function wallet_save() {
   global $LEDGER_ENTRIES;
   Keeper::item('entries', $LEDGER_ENTRIES);
 }
-
 
 Chanter::cast('add --amount --note', function() {
   $amount = (float) Chanter::spell('amount');
@@ -94,7 +92,6 @@ Chanter::cast('book', function() {
   foreach (Ledger::lines() as $line) Whisper::echo("$line{{nl}}");
   Whisper::echo("{{color-success}}= " . LEDGER_CURRENCY . ' ' . number_format(Ledger::total()) . "{{nl}}");
 }, 'Show the whole book.');
-
 
 #sentinel-codex
 Chanter::end();

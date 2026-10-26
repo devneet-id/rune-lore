@@ -2,7 +2,7 @@
 
 > A runite can describe itself.
 
-<!-- status: draft · sources: @bindrune/chanter/rune/cast.php, @bindrune/chanter/artefact/cast.php, Chanter/Manifest.php (end), runites/artefact.md -->
+<!-- status: draft -->
 
 Strike a runite and it resonates: it tells what it is — its name, its casts, the runes awake in it, its size and the memory it needs. Keeper keeps that answer as `rune.json`, and the artefact carries it when the runite travels.
 

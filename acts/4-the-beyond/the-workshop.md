@@ -2,52 +2,54 @@
 
 > Never change Rune without testing it like a user.
 
-<!-- status: draft · sources: rune-dev/notes/rune-dev-workflow.md, rune-dev/scenario/README.md, rune-dev/composer.json, rune-dev/control/ -->
+<!-- status: draft -->
 
-Rune is tested the way it is used: through runites. The workshop is a second repo, `rune-dev`, that sits next to `rune` and loads it from disk. Every change is proved there before it is committed.
+Rune is tested the way it is used: through runites. Keep a **workshop** — a folder of your own, next to your clone of `rune`, that loads Rune from disk. Every change is proved there before it is committed. The workshop is yours; it is not part of any repo.
 
-## The two folders
+## Set it up
 ```
-anwar-achilles/
-├── rune/        the package — only what ships
-└── rune-dev/    the workshop — runites, trials, notes, tools
+your-folder/
+├── rune/        your clone or fork of devneet-id/rune — only what ships
+└── workshop/    your runites and trials (any name)
 ```
 
-`rune-dev/composer.json` maps `Rune\` to the local package:
+`workshop/composer.json` maps `Rune\` to the local package:
 ```json
 { "autoload": { "psr-4": { "Rune\\": "../rune/" } } }
 ```
-Run `composer dump-autoload` once (and again only when this file changes). Every runite in the workshop requires `rune-dev/vendor/autoload.php`, so it uses **your** copy of Rune, not Packagist.
+Run `composer dump-autoload` once (and again only when this file changes). Every runite in the workshop requires `workshop/vendor/autoload.php`, so it uses **your** copy of Rune, not Packagist.
 
-## What lives in the workshop
+## What to keep in it
 | Folder | Use |
 |---|---|
-| `scenario/` | runites from easy to complex; each has a `test` cast (its **trial**) |
-| `scenario/coverage/` | `trials` runs every trial · `coverage` counts the Phantasm nodes the scenarios touch |
-| `control/` | maintainer runites: `cast` (Awakening) and `liberate` — a runite in **liberation mode**, used for `sentinel --phantasm-*` on the runes |
-| `examples/` | small runites kept from past fixes (without Keeper, with Keeper, liberation, CRLF, Crafter…) |
-| `tools/lore-runes/` | generates `rune-lore/runes/` — see [Keeping the Lore](keeping-the-lore.md) |
-| `vscode-cast-test/` | why a `cast` needs a shebang (T47) |
-| `notes/` | tasks, decisions, commit and release notes — **never** in `rune` |
+| `scenario/` | runites from easy to complex, one folder each; every runite has a `test` cast — its **trial** |
+| a runner | one runite that runs every trial, and (if you like) counts which Phantasm nodes the scenarios touch |
+| a liberation runite | `Rune\Ethereal::liberation();` — for `sentinel --phantasm-*` on the runes you change |
 
-## Run the trials
-Run each runite **from its own folder** (Rune uses `getcwd()`).
-```bash
-cd rune-dev/scenario/01-greeting
-php cast test                 # the trial of one scenario
+## Write a trial
+A trial is a cast that checks, not prints. A tiny helper is enough:
+```php
+function trial( $label, $ok ) {
+  global $TRIAL; $TRIAL[] = $ok;
+  Whisper::echo(($ok ? '{{color-success}} ✓ ' : '{{color-danger}} ✗ ') . '{{color-end}}' . $label . '{{nl}}');
+}
 
-cd ../coverage
-php cast trials               # every trial at once
-php cast coverage             # nodes touched per rune
-php cast coverage --rune=Keeper
+Chanter::cast('test', function() {
+  trial('greet answers', Chanter::cast('greet --name=Rune')() === 'Hello, Rune');
+  // …one line per behaviour
+}, 'Run the trial of this runite.');
 ```
-A trial counts checks (`trial('label', $condition)`); a glitch fails one check instead of ending the run. Trials back up and restore their own data. Helpers are in `scenario/trial.php`: `trial`, `trial_cast`, `trial_capture`, `trial_safe`, `trial_section`, `trial_report`.
+- Catch PHP warnings as errors (`set_error_handler` → `ErrorException`) so a glitch fails one check instead of ending the run.
+- Back up and restore any data the trial touches.
+- Run each runite **from its own folder** — Rune uses `getcwd()`.
 
-Today: **105/113** checks pass; the 8 failures are [Known Issues](known-issues.md). Coverage is **56/298 nodes (19%)** — Crafter, Specter, Minister and most ether/essence nodes have no scenario yet.
+```bash
+cd workshop/scenario/01-greeting
+php cast test
+```
 
 ## Work on a rune
 ```bash
-cd rune-dev/control
 php liberate                                  # "The Liberation of Forte" on the main screen
 php liberate grimoire --rune=Weaver           # read the contract
 php liberate sentinel --phantasm-fix=Weaver   # node + link + note + version
@@ -56,9 +58,10 @@ php liberate sentinel --phantasm-up=Weaver    # only raise the version
 `--phantasm-*` spells are refused outside liberation mode ("You are not eligible!!").
 
 ## Test the released version
-To check what users get, make a separate folder with its own `composer.json` and `composer require devneet/rune`. The same runite runs unchanged — only the autoload source differs.
+To check what users get, make another folder with its own `composer.json` and `composer require devneet/rune`. The same runite runs unchanged — only the autoload source differs.
 
 ## Rules of the bench
-- Files in `rune` are **CRLF**: edit by bytes, check `grep -c $'\r'` before and after, `php -l` every PHP file.
-- A new scenario: a folder, a `cast` with the shebang, `require_once __DIR__ . '/../../vendor/autoload.php';`, a `test` cast.
+- Files in `rune` are **CRLF**: keep the line endings, and `php -l` every PHP file you touch.
+- A new scenario: a folder, a `cast` with the shebang, the workshop autoload, a `test` cast.
 - A fix without a trial is a guess. Add the check first, watch it fail, then fix.
+- Notes, drafts and trials stay in the workshop — never in `rune`.

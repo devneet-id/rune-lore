@@ -2,7 +2,7 @@
 
 > The builder: describe an item, then spark it.
 
-<!-- status: draft · sources: Crafter/Manifest.php, Crafter/Entity.php, Crafter/Ether.php, Crafter/Essence.php, Crafter/weaver/*.txt, runes/crafter.md -->
+<!-- status: draft -->
 
 Crafter is the forge of Rune. You describe what to build — an **item** with its **seed** (the recipe) and its **shards** (the source files). Then you **spark** it, and many files become one.
 

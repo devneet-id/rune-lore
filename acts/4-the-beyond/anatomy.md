@@ -2,7 +2,7 @@
 
 > The package from the inside.
 
-<!-- status: draft · sources: rune repo (Ethereal.php, Manifest.php, Phantasm.php, composer.json, Aether/Entity.php, Chanter/Manifest.php), rune-dev/notes/rune-anatomy.md -->
+<!-- status: draft -->
 
 Rune looks like magic from a runite. Inside it is plain PHP: a few folders, three small core classes, and a list of files loaded in a fixed order. Know this map and nothing in Rune is hidden from you.
 

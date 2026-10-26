@@ -2,7 +2,7 @@
 
 > **Engraving** is the act of writing a runite. These are ready recipes: a problem, a runite you can copy, and why it works.
 
-Every recipe is taken from code tested in `rune-dev/scenario/`.
+Every recipe is taken from runites that were run against Rune.
 
 | Recipe | From |
 |---|---|

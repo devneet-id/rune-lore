@@ -19,5 +19,3 @@
   ```
 - Running `php realm/spire` from the parent folder writes `.echoes/realm/spire/` in the parent instead — a second memory for the same runite. (Planned: `.echoes` always next to the runite, wherever it runs from.)
 - The autoload path grows with the depth: `require_once __DIR__ . '/../vendor/autoload.php';`
-
-**Full, tested example:** `rune-dev/scenario/07-nested`

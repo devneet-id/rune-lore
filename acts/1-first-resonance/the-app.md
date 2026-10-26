@@ -2,7 +2,7 @@
 
 > One app for the whole Act: a small CRUD of notes.
 
-<!-- status: draft · sources: scenario/02-notes, scenario/05-todo -->
+<!-- status: draft -->
 
 An app in Rune is a runite. Before you engrave, plan its casts and spells — they are the app's whole surface.
 

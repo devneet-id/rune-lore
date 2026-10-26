@@ -2,7 +2,7 @@
 
 > Apps inside subfolders.
 
-<!-- status: draft · sources: scenario/07-nested, engravings/nested.md, rune-tasks.md T48 · tested in rune-dev/scenario -->
+<!-- status: draft -->
 
 Runites can live in subfolders, grouped by realm. Each keeps its memory next to itself — as long as you call it from its own folder.
 
@@ -32,7 +32,7 @@ Today `.echoes` (and `@liberations/`) follow the folder **the command runs from*
 
 A runite in liberation mode cast from another folder is worse: its runes are not found, and an empty `@liberations/` appears in that folder.
 
-**Planned (T48):** `.echoes` always next to its runite, wherever it is run from. Until then: one runite, one folder to run it from.
+**Planned:** `.echoes` always next to its runite, wherever it is run from. Until then: one runite, one folder to run it from.
 
 ## A runite that visits another
 From the parent, cast an inner runite **inside its folder**:
@@ -40,5 +40,3 @@ From the parent, cast an inner runite **inside its folder**:
 $command = 'cd ' . escapeshellarg(__DIR__ . '/realm') . ' && ' . escapeshellarg(PHP_BINARY) . ' spire where';
 ```
 This is what scenario 07's `visit` cast does.
-
-**Full, tested example:** `rune-dev/scenario/07-nested` (`php cast visit`, `php cast test`)

@@ -2,7 +2,7 @@
 
 > An artefact is a runite preserved to travel: its code, its echoes, its shards — sealed into one `.rune` file and brought back to life anywhere.
 
-<!-- status: draft · sources: runites/artefact.md, runites/awakening.md -->
+<!-- status: draft -->
 
 → Reference: [artefact](../../runites/artefact.md)
 

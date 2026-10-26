@@ -2,7 +2,7 @@
 
 > A runite is a CLI app. You speak to it with casts and spells.
 
-<!-- status: draft · sources: runes/chanter.md, runites/rune.md, rune-cookbook.md §C -->
+<!-- status: draft -->
 
 A **cast** is a command spoken to the runite. A **spell** is a word that shapes it. Before you engrave your own, learn to speak to one.
 

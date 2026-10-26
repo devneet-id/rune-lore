@@ -2,7 +2,7 @@
 
 > The GUI to come — still 100% in development.
 
-<!-- status: draft · sources: @bindrune/chanter/sentinel/cast.php (--altar), sentinel/altar.txt, rune-lore.md (Altar), rune-tasks.md (T25) -->
+<!-- status: draft -->
 
 The Altar is where runites will be shaped by hand. Everything the CLI does — engraving, the Grimoire, artefacts — gets a window. It is the most powerful idea in Rune, and the least finished. **Treat it as a preview.**
 
@@ -15,7 +15,7 @@ Sentinel copies `@bindrune/chanter/sentinel/altar.txt` to `altar.php` in your wo
 `altar.txt` is an old Crafter bundle (header `RUNE 1.0.10`), built with **Nirvana**, the web toolkit that is now Exura.
 
 ## Why it is not ready
-- The UI is Nirvana; it must be rebuilt with **Exura** (T25).
+- The UI is Nirvana; it must be rebuilt with **Exura** (planned).
 - Its API runs a cast with `start cmd /k` — **Windows only** — and passes POST input **without sanitising** it. Run it only on your own machine.
 - It still uses old paths: `.echoes/rune.php/` and a `shards/` folder.
 
@@ -28,4 +28,4 @@ Sentinel copies `@bindrune/chanter/sentinel/altar.txt` to `altar.php` in your wo
 - **Report anomalies** — maintain runes through the GUI and report what it finds (the "Contribute with Altar" idea in `CONTRIBUTING.md`).
 
 ## How to help
-Rebuilding Altar is task **T25** (`feat(altar): rebuild with exura`). Start from [Exura](../2-understanding-its-flow/exura.md) and [Specter](../3-liberation-of-forte/specter.md); keep it local-only and sanitise every input.
+Rebuilding Altar with Exura is planned. Start from [Exura](../2-understanding-its-flow/exura.md) and [Specter](../3-liberation-of-forte/specter.md); keep it local-only and sanitise every input.

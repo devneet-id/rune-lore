@@ -2,7 +2,7 @@
 
 > Aether opens the flow first and closes it last.
 
-<!-- status: draft · sources: Rune/Aether/Manifest.php, Rune/Chanter/Manifest.php, aether_exit(), tested in rune-dev -->
+<!-- status: draft -->
 
 Every run of a runite is one flow. It has a beginning and an end, and what opens first closes last — like a spell that must be sealed in the reverse order it was cast.
 

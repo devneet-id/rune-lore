@@ -41,5 +41,3 @@ Chanter::cast('notes', function() {
 - Save with `(object)`: an empty array would be read as *get*, not *set*.
 - `Cipher::id('n')` gives every record a unique id.
 - Remember `Keeper::begin()` / `Keeper::end()` in the runite — see [Traps](traps.md).
-
-**Full, tested example:** `rune-dev/scenario/02-notes` (and `05-todo`)

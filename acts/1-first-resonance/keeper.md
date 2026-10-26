@@ -2,7 +2,7 @@
 
 > Keeper is the memory of a runite. With it, the app remembers — and `.echoes` appears for the first time.
 
-<!-- status: draft · sources: runes/keeper.md, scenario/02-notes, 06-multicast, 07-nested -->
+<!-- status: draft -->
 
 → Reference: [Keeper](../../runes/keeper.md)
 
@@ -77,7 +77,7 @@ CURRENT ARCANE STATS:
 Reading the arcane is [Act 2](../2-understanding-its-flow/arcane.md). For now: every step of the run is there.
 
 ## Run it from its own folder
-`.echoes` is made in the folder you run from, not the folder of the runite (T48, to be fixed). From the parent folder:
+`.echoes` is made in the folder you run from, not the folder of the runite (planned to change). From the parent folder:
 
 ```bash
 cd ..

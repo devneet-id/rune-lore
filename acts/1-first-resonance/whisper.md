@@ -2,7 +2,7 @@
 
 > Whisper is the voice of the runite. Everything the user reads — and every question the app asks — passes through it.
 
-<!-- status: draft · sources: runes/whisper.md -->
+<!-- status: draft -->
 
 → Reference: [Whisper](../../runes/whisper.md)
 

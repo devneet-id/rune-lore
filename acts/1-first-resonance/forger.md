@@ -2,7 +2,7 @@
 
 > Forger shapes files and folders. With it, the app can write its notes to a file — and read them back.
 
-<!-- status: draft · sources: runes/forger.md, scenario/03-files -->
+<!-- status: draft -->
 
 → Reference: [Forger](../../runes/forger.md)
 

@@ -2,7 +2,7 @@
 
 > What is still open — and where to start.
 
-<!-- status: draft · sources: rune-dev/scenario/README.md (trials), rune-tasks.md (T25, T47, T48), rune code (checked 2026-10-23) -->
+<!-- status: draft -->
 
 Rune is not finished. These are the issues found by the trials and by reading the code. Each one names the file, so you can start right away. Pick one, write its trial, fix it — see [Contributing](contributing.md).
 
@@ -13,7 +13,7 @@ Rune is not finished. These are the issues found by the trials and by reading th
 | `Keeper::echo()` cannot write | `Keeper/Entity.php` · `keeper_echo_set()` | It passes one path map to `forger_fix()`, which expects a list → glitch. Reading works. |
 | `weaver_item($file, [...])` with data glitches | `Weaver/Entity.php` · `weaver_item()` | It calls `weaver_bind()` instead of `weaver_bind_multiple()` → "Array to string conversion". Bind the result with `Weaver::bind()` meanwhile. |
 | Glitch screen labels swapped | `Keeper/Entity.php` · `keeper_glitch_message()` | *On Line Number* shows the file; *File Location* shows the line. |
-| `.echoes` follows the current folder | `Aether/Ether.php`, `Keeper/Ether.php` | `KEEPER_ECHOES = getcwd() . '/.echoes/' . PHP_SELF`. `php realm/cast` from the parent writes `.echoes/realm/cast/`; inside `realm/` it writes `realm/.echoes/cast/` → two memories. **T48**, see below. |
+| `.echoes` follows the current folder | `Aether/Ether.php`, `Keeper/Ether.php` | `KEEPER_ECHOES = getcwd() . '/.echoes/' . PHP_SELF`. `php realm/cast` from the parent writes `.echoes/realm/cast/`; inside `realm/` it writes `realm/.echoes/cast/` → two memories. See below. |
 
 ## Sentinel
 | Issue | What happens |
@@ -34,9 +34,9 @@ Rune is not finished. These are the issues found by the trials and by reading th
 ## Planned work
 | Task | State | Plan |
 |---|---|---|
-| **T47** shebang in every template | decided, not done | Every `cast` without `.php` starts with `#!/usr/bin/env php`; re-encode the Awakening `.rune` templates, keep it through artefact and Sentinel round trips. |
-| **T48** `.echoes` next to its runite | noted, needs a choice | (1) Keeper only: echoes from `dirname(realpath(SCRIPT_FILENAME))`; or (2) `AETHER_REPO` = runite folder, `AETHER_FILE` = name only (wider effect). Test: `scenario/07-nested` 11/11 from any folder. |
-| **T25** Altar → Exura | postponed | Altar still uses Nirvana, runs `start cmd /k` (Windows only) with unsanitised POST input, and old paths (`.echoes/rune.php/`, `shards/`). See [Altar](altar.md). |
+| Shebang in every template | decided, not done | Every `cast` without `.php` starts with `#!/usr/bin/env php`; re-encode the Awakening `.rune` templates, keep it through artefact and Sentinel round trips. |
+| `.echoes` next to its runite | noted, needs a choice | (1) Keeper only: echoes from `dirname(realpath(SCRIPT_FILENAME))`; or (2) `AETHER_REPO` = runite folder, `AETHER_FILE` = name only (wider effect). Test: a runite in a subfolder keeps one `.echoes` whether it is run from inside or from the parent. |
+| Altar → Exura | postponed | Altar still uses Nirvana, runs `start cmd /k` (Windows only) with unsanitised POST input, and old paths (`.echoes/rune.php/`, `shards/`). See [Altar](altar.md). |
 | Float versions | open decision | `1.10` counts as `1.1`. See [Versioning](versioning.md). |
 
 ## Not tested yet

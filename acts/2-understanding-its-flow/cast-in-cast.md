@@ -2,7 +2,7 @@
 
 > A cast can call another cast.
 
-<!-- status: draft · sources: Chanter/Manifest.php, Chanter/Entity.php (chanter_cast_get, chanter_arg_extract, chanter_whisper_drain), Whisper/Manifest.php (drain), scenario/06-multicast -->
+<!-- status: draft -->
 
 A cast is not only for the command line. Inside your runite it is a callable you can fetch and run — so small casts become steps of bigger ones, and one runite becomes a chain of chants.
 

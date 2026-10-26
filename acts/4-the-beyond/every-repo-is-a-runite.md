@@ -2,16 +2,16 @@
 
 > Rune manages Rune. Any repo can do the same.
 
-<!-- status: draft · sources: rune-dev/control, rune-dev/scenario/coverage, Anwar's notes (2026-10) -->
+<!-- status: draft -->
 
 Look back at how Rune is kept. It is tested by runites. Its contract is fixed by a runite (Sentinel). Its version is counted by a runite (the footer). Its documentation is read by a runite (Grimoire). Rune is a simple tool that uses itself to grow — a fractal: runes inside runites, runites inside repos, repos made of runites.
 
 ## Rune keeps Rune
 | Job | Done by |
 |---|---|
-| test every change | `scenario/*/cast test`, `coverage/cast trials` |
-| measure what is tested | `coverage/cast coverage` |
-| keep each contract true | `sentinel --phantasm-fix` (liberation runite in `control/`) |
+| test every change | a `test` cast in every scenario runite ([The Workshop](the-workshop.md)) |
+| measure what is tested | a runite that counts the Phantasm nodes the trials touch |
+| keep each contract true | `sentinel --phantasm-fix` (from a liberation runite) |
 | version the whole | `sentinel --phantasm-up` + the footer `Version=` |
 | read the docs | `grimoire --rune-all` |
 | pack and share | `artefact --invoke` |

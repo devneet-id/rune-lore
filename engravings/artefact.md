@@ -17,5 +17,3 @@ Chanter::cast('seal', function() {
 - `php cast artefact --inspect=cast.rune` shows what is inside before you trust it.
 - In another folder, a fresh runite brings it back: `php cast artefact --revoke=cast.rune`.
 - Without Keeper, the artefact carries the runite only.
-
-**Full, tested example:** `rune-dev/test/rune_mu` (cast `seal`)

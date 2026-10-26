@@ -2,7 +2,7 @@
 
 > A runite is one file. Its default name is `cast`.
 
-<!-- status: draft · sources: rune-cookbook.md §B (skeleton), T47 (shebang), @bindrune/awakening Blank Starter -->
+<!-- status: draft -->
 
 A runite is a rune that became a thing. It is one PHP file you run from the command line — your whole app begins there. Rune calls it `cast` by default, but any name works.
 

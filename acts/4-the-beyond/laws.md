@@ -2,7 +2,7 @@
 
 > The rules Rune keeps. Break them and the flow breaks.
 
-<!-- status: draft · sources: rune README (Laws of the Rune), rune-dev/notes/rune-paradigm.md, rune-tasks.md (decisions), grimoire/ai.txt -->
+<!-- status: draft -->
 
 These are not style tips. Every tool in Rune — Sentinel, Grimoire, the footer, artefacts — expects them. Keep them and the tools work for you.
 
@@ -31,10 +31,10 @@ These are not style tips. Every tool in Rune — Sentinel, Grimoire, the footer,
 
 ## Names and files
 14. **Lore name = code name.** A new word goes into the [Glossary](../../glossary.md) first; the code uses the same word.
-15. **A runite without `.php` starts with a shebang:** line 1 `#!/usr/bin/env php`, line 2 `<?php`. *(Rule decided; templates follow in T47.)*
+15. **A runite without `.php` starts with a shebang:** line 1 `#!/usr/bin/env php`, line 2 `<?php`. *(Rule decided; the Awakening templates still need it — planned.)*
 16. **Echoes live in `.echoes/<runite>/`** — one folder per runite. Do not name your own items like the system files (`rune.json`, `soul.json`, `cast.json`, `shard.json`, `grimoire.json`).
 
 ## Working on Rune
 17. **Files in `rune` are CRLF.** Keep them CRLF; `php -l` every changed PHP file.
-18. **Notes live in `rune-dev`, never in `rune`.** The `rune` repo holds only what ships.
-19. **Prove before you change.** A trial in `rune-dev/scenario` first, then the fix. See [The Workshop](the-workshop.md).
+18. **The `rune` repo holds only what ships.** Notes, drafts and trials stay in your own workshop.
+19. **Prove before you change.** A trial in your workshop first, then the fix. See [The Workshop](the-workshop.md).

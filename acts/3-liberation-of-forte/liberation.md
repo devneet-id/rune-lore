@@ -2,7 +2,7 @@
 
 > The Liberation of Forte — freedom in ability.
 
-<!-- status: draft · sources: rune/LIBERATION.md, rune/README.md (Liberation, Laws), Ethereal.php, Aether/Entity.php · tested in rune-dev/scenario (scratch) -->
+<!-- status: draft -->
 
 Liberation is the release of Rune from its **Origin** to its **contributors**. Full freedom is given; only the **paradigm** stays — Ether, Essence, Entity, Manifest, Phantasm. With it you can build a new working environment, a different workflow, and runes of your own: public (to contribute) or private (local).
 

@@ -25,5 +25,3 @@ Chanter::cast('secret --set --value --get', function() {
 - Seal = base64, then runic. Open = runic back, then base64 decode. Use the same variant both ways.
 - Variants: `default`, `elder_futhark`, `younger_futhark`, `anglo_saxon_futhorc`.
 - The runic cipher is a lore seal, not encryption — don't keep real passwords this way.
-
-**Full, tested example:** `rune-dev/scenario/04-vault`

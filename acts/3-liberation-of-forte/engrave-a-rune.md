@@ -2,7 +2,7 @@
 
 > Fill the five files: one rune, one purpose.
 
-<!-- status: draft · sources: rune-anatomy.md, rune/README.md (Laws), origin runes (Cipher), scratch rune Ledger · tested in rune-dev/scenario (scratch) -->
+<!-- status: draft -->
 
 A rune does one thing well. **Ledger** keeps a small book of income and expense in one flow — nothing else. Before you write code, say its purpose in one sentence. If you need *and*, you may need two runes.
 

@@ -2,7 +2,7 @@
 
 > When the flow breaks, Keeper catches it.
 
-<!-- status: draft · sources: Keeper/Entity.php (keeper_glitch_boot, keeper_glitch_message, keeper_is_glitch), engravings/traps.md, rune-bugs.md -->
+<!-- status: draft -->
 
 A runite does not fall silently. When something breaks — an exception, a PHP warning, a fatal error — Keeper stops the flow, shows the **glitch** screen and writes it down in the echoes.
 
@@ -38,7 +38,7 @@ $ php cast break
  ♦ Severity:
     » EXCEPTION
  ♦ On Line Number:
-    » /root/work/rd/scenario/_act2/cast
+    » /home/you/app/cast
  ♦ File Location:
     » 33
  ♦ Message:
@@ -69,9 +69,9 @@ $ php cast warn
     » Undefined array key "missing"
 
  #  T R A C E
- ♦ /root/work/rd/scenario/_act2/cast [38]
- ♦ /root/work/rune/Chanter/Manifest.php [55]
- ♦ /root/work/rd/scenario/_act2/cast [42]
+ ♦ /home/you/app/cast [38]
+ ♦ /home/you/app/vendor/devneet/rune/Chanter/Manifest.php [55]
+ ♦ /home/you/app/cast [42]
 ```
 
 Read the trace from the top: your line, then `Chanter::end()` running the cast, then the `Chanter::end()` line in your runite.
@@ -81,7 +81,7 @@ Read the trace from the top: your line, then `Chanter::end()` running the cast, 
 Every glitch is also written to `.echoes/<runite>/glitch.txt`:
 
 ```
-[2026-10-23 12:52:40] [EXCEPTION] [33] [/root/work/rd/scenario/_act2/cast] The seal is broken.
+[2026-10-23 12:52:40] [EXCEPTION] [33] [/home/you/app/cast] The seal is broken.
 ```
 
 `[time] [severity] [line] [file] message` — here the order is right.

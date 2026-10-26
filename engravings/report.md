@@ -27,5 +27,3 @@ Chanter::cast('report --min', function() {
 - `Weaver::item($file)` loads a template once and keeps it in memory.
 - `weaver_bind_multiple($template, $data, false)` binds without remembering the values in the bond — right for repeated rows.
 - `weaver_min($html, 'html')` removes comments and spaces (`css`, `js`, `php` too).
-
-**Full, tested example:** `rune-dev/scenario/05-todo`

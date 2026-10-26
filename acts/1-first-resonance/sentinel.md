@@ -2,7 +2,7 @@
 
 > The Sentinel guards the runite. Ask it, and it brings a rune in — or takes it out.
 
-<!-- status: draft · sources: runites/sentinel.md, rune-cookbook.md §B, rune-lore-plan.md (user-flow test) -->
+<!-- status: draft -->
 
 → Reference: [sentinel](../../runites/sentinel.md)
 

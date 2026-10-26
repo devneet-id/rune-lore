@@ -2,7 +2,7 @@
 
 > Weaver turns raw data into text. Keep the shape of the output in a template; let Weaver fill it.
 
-<!-- status: draft · sources: runes/weaver.md, scenario/05-todo -->
+<!-- status: draft -->
 
 → Reference: [Weaver](../../runes/weaver.md)
 

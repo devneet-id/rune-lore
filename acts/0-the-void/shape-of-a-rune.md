@@ -2,7 +2,7 @@
 
 > Every rune is one folder of five files.
 
-<!-- status: draft · sources: rune-paradigm.md §3–4, rune README (Paradigm), Rune/Whisper/*, Rune/Manifest.php, Rune/Phantasm.php -->
+<!-- status: draft -->
 
 A rune is like a living thing. It has truth that never changes, a state that flows, a will that acts, a face it shows, and a shadow that tells you what it is.
 

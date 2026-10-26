@@ -2,7 +2,7 @@
 
 > Cast it once and read what comes back.
 
-<!-- status: draft · sources: scenario/01-greeting, runites/rune.md, runes/chanter.md, runes/whisper.md, runes/weaver.md, tested in rune-dev -->
+<!-- status: draft -->
 
 The void answers when you speak to it. Run the runite you just awakened, then teach it one word of your own.
 
