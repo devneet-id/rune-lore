@@ -2,8 +2,6 @@
 
 > Your app travels as an artefact — and can become a template.
 
-<!-- status: draft -->
-
 An app is finished when it can leave your folder. Seal it into one `.rune`, carry your own runes with it as shards, and bring it back to life anywhere Rune lives.
 
 ## 1 · Carry your rune as shards

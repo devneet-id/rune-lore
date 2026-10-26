@@ -2,8 +2,6 @@
 
 > Why things are the way they are.
 
-<!-- status: draft -->
-
 Old names still hide in comments, Altar and old artefacts. When you meet one, this page tells you what it became and why.
 
 ## Old names → now

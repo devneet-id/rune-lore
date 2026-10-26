@@ -2,8 +2,6 @@
 
 > Work beyond the main flow.
 
-<!-- status: draft -->
-
 A flow begins, does its work and ends. Specter is what stays when it ends — a **soul** that outlives the run — and what moves beside it: a cast in another window, a **seer** that keeps watching, a server that keeps serving.
 
 Specter keeps its memory in `.echoes`, so **Keeper must be engraved** (with `Keeper::begin()` and `Keeper::end()`).

@@ -2,8 +2,6 @@
 
 > Rune manages Rune. Any repo can do the same.
 
-<!-- status: draft -->
-
 Look back at how Rune is kept. It is tested by runites. Its contract is fixed by a runite (Sentinel). Its version is counted by a runite (the footer). Its documentation is read by a runite (Grimoire). Rune is a simple tool that uses itself to grow — a fractal: runes inside runites, runites inside repos, repos made of runites.
 
 ## Rune keeps Rune

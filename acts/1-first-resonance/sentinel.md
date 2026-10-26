@@ -2,8 +2,6 @@
 
 > The Sentinel guards the runite. Ask it, and it brings a rune in — or takes it out.
 
-<!-- status: draft -->
-
 → Reference: [sentinel](../../runites/sentinel.md)
 
 ## Invoke three runes

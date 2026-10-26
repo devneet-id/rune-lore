@@ -2,8 +2,6 @@
 
 > No rune stands alone.
 
-<!-- status: draft -->
-
 Each rune has one purpose. To do it, it borrows the hands of others: Keeper remembers by writing files with Forger, Crafter bundles with Weaver's templates, Aether speaks its footer through Whisper. The Phantasm writes these bonds down.
 
 ## The `link` of a Phantasm

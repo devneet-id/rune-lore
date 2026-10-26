@@ -2,8 +2,6 @@
 
 > Several apps in one folder, each with its own memory.
 
-<!-- status: draft -->
-
 One folder can hold many runites. Each is its own world — its own casts, its own `AETHER_FILE`, its own memory — while they share the folder's `vendor/` and `@liberations/`.
 
 ## One folder, two apps

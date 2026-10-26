@@ -2,8 +2,6 @@
 
 > A called rune still sleeps. Awaken it.
 
-<!-- status: draft -->
-
 Naming a rune is not enough. A rune sleeps until its truth, its flow and its will are woken — in that order.
 
 ## In code

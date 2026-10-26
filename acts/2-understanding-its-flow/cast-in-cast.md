@@ -2,8 +2,6 @@
 
 > A cast can call another cast.
 
-<!-- status: draft -->
-
 A cast is not only for the command line. Inside your runite it is a callable you can fetch and run — so small casts become steps of bigger ones, and one runite becomes a chain of chants.
 
 ## Get a cast, then run it

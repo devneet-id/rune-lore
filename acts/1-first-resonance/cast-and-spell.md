@@ -2,8 +2,6 @@
 
 > A runite is a CLI app. You speak to it with casts and spells.
 
-<!-- status: draft -->
-
 A **cast** is a command spoken to the runite. A **spell** is a word that shapes it. Before you engrave your own, learn to speak to one.
 
 ## The main screen

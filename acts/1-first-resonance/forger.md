@@ -2,8 +2,6 @@
 
 > Forger shapes files and folders. With it, the app can write its notes to a file — and read them back.
 
-<!-- status: draft -->
-
 → Reference: [Forger](../../runes/forger.md)
 
 Keeper keeps the app's own memory inside `.echoes`. Forger works with files anywhere — files a person can open, send, or edit.

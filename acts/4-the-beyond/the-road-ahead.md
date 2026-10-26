@@ -2,8 +2,6 @@
 
 > Where Rune is heading.
 
-<!-- status: draft -->
-
 You came from the void, resonated with each rune, understood the flow, made runes of your own — and now you can keep Rune itself. What is left is not a lesson. It is the road.
 
 ## Near

@@ -2,8 +2,6 @@
 
 > Every rune carries its contract.
 
-<!-- status: draft -->
-
 The Phantasm is how a rune speaks of itself without being run. The Grimoire reads it, the footer counts it, and other runes find it through it. Rune uses it instead of PHP Reflection.
 
 ## The fields

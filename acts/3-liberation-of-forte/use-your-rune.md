@@ -2,8 +2,6 @@
 
 > Your rune is a rune like any other.
 
-<!-- status: draft -->
-
 Once it has a Phantasm, Ledger walks the same paths as Whisper or Keeper: Sentinel invokes it, the runite awakens it, the Grimoire reads it, the footer counts it.
 
 ## Invoke

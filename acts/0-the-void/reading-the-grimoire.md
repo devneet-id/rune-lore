@@ -2,8 +2,6 @@
 
 > Look inside a rune you know.
 
-<!-- status: draft -->
-
 The Grimoire is a book that feels alive. It does not open a rune's code — it reads the rune's **Phantasm**, the picture the rune keeps of itself.
 
 ## Open it

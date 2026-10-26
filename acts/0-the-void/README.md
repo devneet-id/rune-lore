@@ -2,8 +2,6 @@
 
 > The prologue. Before anything is engraved, there is only the void — and four runes.
 
-<!-- status: draft -->
-
 - **Runes in this Act:** Aether, Whisper, Weaver, Chanter
 - **You run:** almost nothing — install, cast your runite once, read one rune in the Grimoire.
 - **Not in this Act:** `.echoes`, files, memory, secrets. Without Forger, Cipher and Keeper a runite leaves no trace — `.echoes` first appears in [Act 1 · First Resonance](../1-first-resonance/README.md).

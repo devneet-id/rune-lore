@@ -2,8 +2,6 @@
 
 > Sentinel shapes the empty rune for you.
 
-<!-- status: draft -->
-
 A rune begins as a name and five empty files. Sentinel carves them; you engrave them.
 
 ## Create

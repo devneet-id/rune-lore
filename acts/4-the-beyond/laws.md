@@ -2,8 +2,6 @@
 
 > The rules Rune keeps. Break them and the flow breaks.
 
-<!-- status: draft -->
-
 These are not style tips. Every tool in Rune — Sentinel, Grimoire, the footer, artefacts — expects them. Keep them and the tools work for you.
 
 ## The runes

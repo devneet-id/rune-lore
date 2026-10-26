@@ -2,8 +2,6 @@
 
 > One run, from the first rune awakened to the last line of the footer.
 
-<!-- status: draft -->
-
 A runite is read from top to bottom, once. Nothing runs by itself: runes are loaded, the flow is opened, casts are only *registered* — and the real work happens when the flow is closed.
 
 ## The whole run

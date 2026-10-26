@@ -2,8 +2,6 @@
 
 > From a change to Packagist.
 
-<!-- status: draft -->
-
 A release is the footer made public. Commit the changes, tag the version the footer shows, publish it on GitHub — Packagist does the rest.
 
 ## 1. Commit

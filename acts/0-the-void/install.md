@@ -2,8 +2,6 @@
 
 > Composer brings the runes. Awakening writes your first runite.
 
-<!-- status: draft -->
-
 Awakening is the first step out of the void. You start with an empty file and one call; Awakening fills the file with a runite.
 
 ## 1 · Requirements

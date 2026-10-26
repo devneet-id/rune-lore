@@ -2,8 +2,6 @@
 
 > The GUI to come — still 100% in development.
 
-<!-- status: draft -->
-
 The Altar is where runites will be shaped by hand. Everything the CLI does — engraving, the Grimoire, artefacts — gets a window. It is the most powerful idea in Rune, and the least finished. **Treat it as a preview.**
 
 ## What exists

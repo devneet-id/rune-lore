@@ -2,8 +2,6 @@
 
 > Engrave an app from nothing — no template.
 
-<!-- status: draft -->
-
 Awakening gave you a runite from an artefact. Now you start from an empty file, the way the built-in runites were made. We engrave **wallet**: a ledger that remembers — Ledger counts, Keeper keeps.
 
 ## 1 · Plan before you engrave

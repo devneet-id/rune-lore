@@ -2,8 +2,6 @@
 
 > Call a rune into your runite by its Manifest.
 
-<!-- status: draft -->
-
 The Manifest is the face a rune shows to the world. Your runite never reaches into a rune's heart; it speaks to its face, and the face carries the words inside.
 
 ## In code

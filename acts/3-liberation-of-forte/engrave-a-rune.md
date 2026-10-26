@@ -2,8 +2,6 @@
 
 > Fill the five files: one rune, one purpose.
 
-<!-- status: draft -->
-
 A rune does one thing well. **Ledger** keeps a small book of income and expense in one flow — nothing else. Before you write code, say its purpose in one sentence. If you need *and*, you may need two runes.
 
 Every name carries the rune's name, so it never collides with another rune:

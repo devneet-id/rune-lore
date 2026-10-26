@@ -2,8 +2,6 @@
 
 > Cast it once and read what comes back.
 
-<!-- status: draft -->
-
 The void answers when you speak to it. Run the runite you just awakened, then teach it one word of your own.
 
 ## The main screen

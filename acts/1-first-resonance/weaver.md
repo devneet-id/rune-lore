@@ -2,8 +2,6 @@
 
 > Weaver turns raw data into text. Keep the shape of the output in a template; let Weaver fill it.
 
-<!-- status: draft -->
-
 → Reference: [Weaver](../../runes/weaver.md)
 
 ## A template for one row

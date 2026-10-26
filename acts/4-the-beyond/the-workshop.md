@@ -2,8 +2,6 @@
 
 > Never change Rune without testing it like a user.
 
-<!-- status: draft -->
-
 Rune is tested the way it is used: through runites. Keep a **workshop** — a folder of your own, next to your clone of `rune`, that loads Rune from disk. Every change is proved there before it is committed. The workshop is yours; it is not part of any repo.
 
 ## Set it up

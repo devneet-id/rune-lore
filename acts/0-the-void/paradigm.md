@@ -2,8 +2,6 @@
 
 > Runes are the core. Runites are what you build from them.
 
-<!-- status: draft -->
-
 The only thing that never changes in Rune is its paradigm. Everything else is free.
 
 ## One rune, one purpose

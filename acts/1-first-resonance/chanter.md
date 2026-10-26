@@ -2,8 +2,6 @@
 
 > Chanter is the gate of the command line. Every cast of the app passes through it.
 
-<!-- status: draft -->
-
 You met casts as a user. Now engrave them. → Reference: [Chanter](../../runes/chanter.md)
 
 ## Register a cast

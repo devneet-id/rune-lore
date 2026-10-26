@@ -2,8 +2,6 @@
 
 > Keeper is the memory of a runite. With it, the app remembers — and `.echoes` appears for the first time.
 
-<!-- status: draft -->
-
 → Reference: [Keeper](../../runes/keeper.md)
 
 ## Remember the notes

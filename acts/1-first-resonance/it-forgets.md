@@ -2,8 +2,6 @@
 
 > The app works. Run it twice and the notes of the first run are gone.
 
-<!-- status: draft -->
-
 The four runes live inside one flow. When `Aether::end()` closes the flow, everything the flow held is gone.
 
 ## See it

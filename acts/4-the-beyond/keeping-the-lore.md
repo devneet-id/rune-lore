@@ -2,8 +2,6 @@
 
 > When the code changes, the lore changes with it.
 
-<!-- status: draft -->
-
 `rune-lore` is how the next person learns Rune without asking. A lore that lies is worse than no lore. Keep it in step with the code.
 
 ## What is generated, what is written
@@ -26,7 +24,6 @@ The lore intro, "When to use", the example and the notes are written by hand. Ev
 - An Act only uses runes met so far: Act 0 — Aether, Whisper, Weaver, Chanter; Act 1 — + Forger, Cipher, Keeper; Act 2 — + Crafter; Act 3 — + Specter, Minister and your own runes.
 - One page, one topic. Link, do not repeat.
 - A new word goes into the [Glossary](../../glossary.md) first, with the same name as in code.
-- Each page has a status line: `<!-- status: outline | draft | done -->`.
 
 ## When something changes
 | Change in `rune` | Update in `rune-lore` |

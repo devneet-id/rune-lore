@@ -2,8 +2,6 @@
 
 > The Liberation of Forte — freedom in ability.
 
-<!-- status: draft -->
-
 Liberation is the release of Rune from its **Origin** to its **contributors**. Full freedom is given; only the **paradigm** stays — Ether, Essence, Entity, Manifest, Phantasm. With it you can build a new working environment, a different workflow, and runes of your own: public (to contribute) or private (local).
 
 *Forte* means freedom in ability. It is only a caption — the words you see at the entrance.

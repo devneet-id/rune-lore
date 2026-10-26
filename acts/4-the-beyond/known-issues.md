@@ -2,8 +2,6 @@
 
 > What is still open — and where to start.
 
-<!-- status: draft -->
-
 Rune is not finished. These are the issues found by the trials and by reading the code. Each one names the file, so you can start right away. Pick one, write its trial, fix it — see [Contributing](contributing.md).
 
 ## Bugs

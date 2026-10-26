@@ -2,8 +2,6 @@
 
 > Every step leaves a trace.
 
-<!-- status: draft -->
-
 While the flow runs, every rune whispers what it does to Aether: *Chanter cast*, *Forger item*, *Weaver bind*. That trace is the **arcane**. Keeper writes it down when the flow ends, so you can read how your runite really moved.
 
 ## Where it is

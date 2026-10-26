@@ -2,8 +2,6 @@
 
 > Apps inside subfolders.
 
-<!-- status: draft -->
-
 Runites can live in subfolders, grouped by realm. Each keeps its memory next to itself — as long as you call it from its own folder.
 
 ```

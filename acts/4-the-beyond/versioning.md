@@ -2,8 +2,6 @@
 
 > Every change raises a Phantasm; the footer adds them up.
 
-<!-- status: draft -->
-
 Rune counts its own growth. Each rune carries a version in its Phantasm; the footer of every run sums them. The sum is the version of Rune — and the release tag.
 
 ## The footer

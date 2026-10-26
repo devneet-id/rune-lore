@@ -2,8 +2,6 @@
 
 > Aether is the flow under the app. It opened the run, it will close it — and it can tell you what happened in between.
 
-<!-- status: draft -->
-
 → Reference: [Aether](../../runes/aether.md)
 
 Aether's Manifest is small: `begin()`, `end()`, `dd()`, `exit()`. You met `begin` and `end` in [Act 0](../0-the-void/begin-and-end.md). Here are the other two, and a clock.

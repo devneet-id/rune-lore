@@ -2,8 +2,6 @@
 
 > From an issue to a merged change.
 
-<!-- status: draft -->
-
 Anyone who keeps the laws can keep Rune. You do not need its first creator — you need a trial that proves the problem, a change that keeps the contract, and a clear pull request.
 
 ## 1. Set up

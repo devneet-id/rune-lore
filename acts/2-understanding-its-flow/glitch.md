@@ -2,8 +2,6 @@
 
 > When the flow breaks, Keeper catches it.
 
-<!-- status: draft -->
-
 A runite does not fall silently. When something breaks — an exception, a PHP warning, a fatal error — Keeper stops the flow, shows the **glitch** screen and writes it down in the echoes.
 
 ## Who catches it

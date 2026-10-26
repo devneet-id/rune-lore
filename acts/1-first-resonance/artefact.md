@@ -2,8 +2,6 @@
 
 > An artefact is a runite preserved to travel: its code, its echoes, its shards — sealed into one `.rune` file and brought back to life anywhere.
 
-<!-- status: draft -->
-
 → Reference: [artefact](../../runites/artefact.md)
 
 In [Act 0](../0-the-void/reading-the-grimoire.md) you met the Grimoire — the book that reads a rune. The Artefact is its twin: it reads your **runite**, seals it, and opens it again.
