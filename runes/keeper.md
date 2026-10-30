@@ -6,7 +6,7 @@ Keeper is the memory of a runite. It keeps **echoes** in `.echoes/<runite>/`: it
 
 | | |
 |---|---|
-| **Version** | `1.12` |
+| **Version** | `1.13` |
 | **Mark** | `VOID` |
 | **By** | Anwar Achilles |
 | **Introduced in** | Act 1 · First Resonance |
@@ -57,8 +57,9 @@ The logic. Other runes call these functions too.
 | `keeper_echo( String $repo, String $name, $value = "" )` | Reads or writes a raw file inside a given repository, depending on whether a value is provided. |
 | `keeper_echo_set( String $repo, String $name, $value )` | Ensures the target repository exists, then saves the given value as a plain file. |
 | `keeper_echo_get( String $repo, String $name )` | Reads and returns the contents of a plain file from the given repository. |
-| `keeper_shard_set( String $source_path )` | Traces files, collects valid items, and stores them as encoded rune shards. |
-| `keeper_shard_set_all( Array $file_maps )` | Adds many files and folders to the shard list at once. |
+| `keeper_shard_place( String $path )` | Places a shard path in the runite folder: a relative path is read from AETHER_REPO, an absolute one is kept. |
+| `keeper_shard_set( String $source_path )` | Adds one file to the shard list (only files inside the runite folder, stored relative to it). |
+| `keeper_shard_set_all( Array $file_maps )` | Adds many files and folders to the shard list at once (paths relative to the runite folder). |
 | `keeper_shard_clean()` | Cleans all stored shards and resets the shard repository. |
 | `keeper_glitch_boot()` | Initializes custom error, exception, and shutdown handlers to capture and log all glitches into a file. |
 | `keeper_glitch_message( $glitch )` | Shows the glitch screen (severity, line, file, message). |
@@ -71,7 +72,7 @@ Constants — truth that never changes.
 | Constant | Note |
 |---|---|
 | `KEEPER` | main ether |
-| `KEEPER_ECHOES` | Base directory for all Keeper-related output files and logs. |
+| `KEEPER_ECHOES` | Base directory for all Keeper-related output files and logs (next to the runite). |
 | `KEEPER_ECHOES_KEEPER` | Path to the main keeper state file. |
 | `KEEPER_ECHOES_STATS` | Path to the statistics log file for tracking system data. |
 | `KEEPER_ECHOES_ARCANE` | Path to the active arcane log file containing process entries. |
@@ -93,9 +94,10 @@ Globals — state that changes as the flow goes on.
 
 ## Notes
 - Without `Keeper::begin()` the `.echoes` folder does not exist and `Keeper::item()` saves nothing (it still returns `true`). `sentinel --invoke=Keeper` does not add `begin`/`end` for you.
-- Every runite has its own folder: `.echoes/cast/`, `.echoes/ember/`…
+- Every runite has its own folder next to itself: `.echoes/cast/`, `.echoes/ember/`… — the same folder whether it is cast from inside or from a parent folder.
+- Shards are paths relative to the runite's folder (`Keeper::shard(['weaver'])`); only files inside that folder are carried.
 - Arcane states by step time: BURST, FLASH, FLOW, FALL, BREAK, COLLAPSE, OVERCLOCK.
 - Known issue: writing with `Keeper::echo()` glitches; read works.
 
 ---
-*Generated from `Keeper/Phantasm.php` (version 1.12). Read it live with `php cast grimoire --rune=Keeper`.*
+*Generated from `Keeper/Phantasm.php` (version 1.13). Read it live with `php cast grimoire --rune=Keeper`.*

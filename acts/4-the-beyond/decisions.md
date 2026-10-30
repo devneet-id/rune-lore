@@ -34,6 +34,6 @@ Runes are not split into many Composer packages. The origin runes stay together;
 - `+` in spell values is kept (`--q=a+b` → `a+b`) `0` is a value, not "missing".
 - `--phantasm-*` spells run only in liberation mode.
 
-## Still waiting for a decision
-- **Float versions** — `1.10` counts as `1.1`. See [Versioning](versioning.md).
-- **Where `.echoes` lives** when a runite runs from another folder — two options, see [Known Issues](known-issues.md).
+## Decided since
+- **Whole-number versions** — a version is `<major>.<minor>` read as whole numbers, so `1.10` comes after `1.9`. See [Versioning](versioning.md).
+- **`.echoes` next to the runite** — `AETHER_REPO` is the runite's own folder, so `.echoes`, `@liberations/` and shards stay with it, wherever it is cast from.

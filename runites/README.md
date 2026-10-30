@@ -43,4 +43,4 @@ Aether::end();
 ```
 - **Shebang** on line 1 when the file has no `.php` extension.
 - The three markers `#sentinel-manifest`, `#sentinel-awaken`, `#sentinel-codex` are where Sentinel writes. Keep them.
-- Every runite keeps its memory in `.echoes/<runite>/` (when Keeper is engraved). Run a runite from its own folder.
+- Every runite keeps its memory in `.echoes/<runite>/` next to itself (when Keeper is engraved), wherever it is cast from.

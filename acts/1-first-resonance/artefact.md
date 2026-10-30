@@ -28,7 +28,7 @@ php cast artefact --shard-list
 - A folder adds every file inside it. Paths are relative to the runite's folder.
 - `.echoes` never becomes a shard.
 - `--shard-remove=<id>` drops one, `--shard-clean` drops all.
-- While Keeper is awake, files Forger reads or writes **by a path relative to the runite** are added on their own (`FORGER_KEEPER_SHARD`). Check the list before you seal.
+- While Keeper is awake, files Forger reads or writes **inside the runite's folder** are added on their own (`FORGER_KEEPER_SHARD`). Files outside it are never carried. Check the list before you seal.
 
 ## Seal: `--invoke`
 ```bash
@@ -45,7 +45,7 @@ The Artefact of Runite
 
 [ᚱᚾ] A R T E F A C T
   ::time=1792760128
-  ::version=1.11
+  ::version=1.20.110
   ::runic=anglo_saxon_futhorc
   ::encryption=base64
   ::php=8.3.6
@@ -66,8 +66,8 @@ php cast artefact --inspect=cast.rune
 ```
 ```
  ♦ Rune & PHP Version
-    » 1.11 with PHP 8.3.6
-    You » 1.11 with PHP 8.3.6
+    » 1.20.110 with PHP 8.3.6
+    You » 1.20.110 with PHP 8.3.6
 
  #  C A S T
  ♦ note --add --edit --remove --text
@@ -118,8 +118,18 @@ No notes yet.
 
 The app came back. Its **memory** did not — `notes.json` lives in `.echoes`, and items do not travel. The exported file did, so `import` brings the notes home.
 
+## From the internet: `--online`
+An artefact does not have to be on your disk. Give a link — or a name from the vault — and add `--online`:
+
+```bash
+php cast artefact --inspect=https://example.com/notes/cast.rune --online
+php cast artefact --revoke=https://example.com/notes/cast.rune --online
+```
+
+The `.rune` is read straight from the internet and opened; nothing is saved in your folder. A name such as `--revoke=how-to-casting --online` is looked up in the vault, like a package. More in the [reference](../../runites/artefact.md#online-links-and-the-vault).
+
 ## Traps
-- Revoke only what you trust, and inspect first.
+- Revoke only what you trust, and inspect first — online artefacts most of all.
 - Known issue: an artefact with **exactly one** shard breaks. `--inspect` glitches, and `--revoke` says *success* but does not write the shard. Carry none, or two and more.
 - Without Keeper an artefact carries the runite only.
 

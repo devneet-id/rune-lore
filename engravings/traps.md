@@ -9,7 +9,6 @@
 | A spell value is cut at a space | From code, casts are split by spaces | Use `%20`, or quotes on the command line |
 | `--flag` gives `'1'`, a missing spell gives `false` | That is how spells are read | Check `!$v || $v === '1'` when a value is required |
 | VS Code shows `cast` as Plain Text | No extension and no shebang | Start with `#!/usr/bin/env php` |
-| `.echoes` appears in another folder | `.echoes` follows the folder you run from | `cd` into the runite's folder first |
 | `Class "Rune\X\Manifest" not found` | The rune is not there (or was revoked) | `sentinel --revoke=X`, or create the rune |
 | `sentinel --phantasm-*` says *not eligible* | Not in liberation mode | Add `Rune\Ethereal::liberation();` after the autoload |
 | A liberation rune is ignored | Its name is an origin rune name | Rename it |

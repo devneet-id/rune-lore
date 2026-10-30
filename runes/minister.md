@@ -42,7 +42,7 @@ The logic. Other runes call these functions too.
 | Function | Note |
 |---|---|
 | `minister()` | Main entity |
-| `minister_familiar()` | Reads the familiar (spirit) kept by Keeper in .echoes/<runite>/familiar.json as {"url": "", "token": ""} |
+| `minister_familiar()` | Reads the familiar (spirit) kept by Keeper in .echoes/&lt;runite&gt;/familiar.json as {"url": "", "token": ""} |
 | `minister_http( String $url, Array $headers, Array $body )` | Sends a JSON request to the familiar and returns the raw response body |
 | `minister_ask( Array $texts )` | Asks the familiar (AI spirit) and keeps its answer |
 | `minister_say()` | Returns every answer collected from the familiar |

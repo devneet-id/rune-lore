@@ -33,7 +33,7 @@ rune/
 
 ## Autoload — origin first
 - Composer maps `Rune\` to the package folder.
-- `Ethereal::liberation()` creates `getcwd()/@liberations/` (with `README.md` from `LIBERATION.md`), adds a **second** loader for `Rune\` → `@liberations/`, and registers it with `register(false)` — **appended**. Composer asks the origin loader first, so an origin rune always wins.
+- `Ethereal::liberation()` creates `@liberations/` next to the runite (the folder of `SCRIPT_FILENAME`, else `getcwd()`) (with `README.md` from `LIBERATION.md`), adds a **second** loader for `Rune\` → `@liberations/`, and registers it with `register(false)` — **appended**. Composer asks the origin loader first, so an origin rune always wins.
 - It then defines `LIBERATION` (the folder path). Sentinel, Grimoire and the footer check this constant.
 
 ## How a cast travels
@@ -64,11 +64,11 @@ A rune is awake when its **main** exists: `aether_has_entity('keeper')` (functio
 | Constant | Value |
 |---|---|
 | `AETHER_FILE` | the runite as typed (`$_SERVER['PHP_SELF']`) |
-| `AETHER_REPO` | the folder the command runs from (`getcwd()`) |
-| `AETHER_VERSION` | `'1.11'` — only its major (`1`) reaches the footer |
+| `AETHER_REPO` | the runite's own folder (`dirname(realpath(SCRIPT_FILENAME))`, else `getcwd()`) |
+| `AETHER_VERSION` | `'1.11'` — major and minor of the Rune core; `aether_version()` adds the rune versions ([Versioning](versioning.md)) |
 | `AETHER_RUNE_LOCATION` | the package folder |
 | `AETHER_PHP_VERSION` | `8.1.10` (minimum) |
-| `KEEPER_ECHOES` | `AETHER_REPO . '/.echoes/' . AETHER_FILE . '/'` |
+| `KEEPER_ECHOES` | `AETHER_REPO . '/.echoes/' . basename(AETHER_FILE) . '/'` — always next to the runite |
 | `LIBERATION` | the `@liberations/` path, only in liberation mode |
 
 See also: [The Shape of a Rune](../0-the-void/shape-of-a-rune.md) · [The Flow](../2-understanding-its-flow/the-flow.md) · [Runites](../../runites/README.md)

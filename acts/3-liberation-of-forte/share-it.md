@@ -21,7 +21,7 @@ $ php cast artefact --shard-list
 [4] feca8f9849f2985f  php @liberations/Ledger/Manifest.php
 [5] ea9054a5b8320c97  php @liberations/Ledger/Phantasm.php
 ```
-**Trap:** `Keeper::shard([__DIR__ . '/@liberations/Ledger'])` stores **absolute** paths. On revoke the files are written back to that same absolute path — on another machine, a folder that does not exist. Run from the runite's folder and keep shard paths relative.
+Shard paths are kept **relative to the runite's folder** — even `Keeper::shard([__DIR__ . '/@liberations/Ledger'])` is stored as `@liberations/Ledger/…` — so on revoke the files land next to the new runite. Files outside the runite's folder are not carried.
 
 ## 2 · Seal it
 ```bash

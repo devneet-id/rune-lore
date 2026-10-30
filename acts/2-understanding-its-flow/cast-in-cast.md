@@ -118,7 +118,7 @@ The drained text still carries Whisper's colours; strip them as above when you n
 $ php cast hello --name=Anwar --zero-trust
 Hello, Anwar.
 
-◇Version=1.12.31: ϟExecute=0.0040s, ΞMemory=1.10MB - ^1.28MB
+◇Version=1.20.110: ϟExecute=0.0040s, ΞMemory=1.10MB - ^1.28MB
 ```
 
 What changes:

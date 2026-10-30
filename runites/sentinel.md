@@ -21,8 +21,8 @@ Sentinel guards your runite. It writes runes into it and takes them out, and —
 | `sentinel --phantasm-fix-note=Ledger` | copies every `#NOTE` into the nodes |
 | `sentinel --phantasm-fix-link=Ledger` | finds which runes it uses |
 | `sentinel --phantasm-fix-link-all` | links for every rune |
-| `sentinel --phantasm-up=Ledger` | raises its version |
-| `sentinel --phantasm-fix=Ledger` | node + link + note + version at once |
+| `sentinel --phantasm-up=Ledger` | raises its minor version by one (`0.9` → `0.10`); refuses an unknown rune or a version that is not `<major>.<minor>` |
+| `sentinel --phantasm-fix=Ledger` | node + link + note at once, then raises the version only if one of them changed |
 
 ## Notes
 - Sentinel writes at `#sentinel-manifest` and `#sentinel-awaken`. Keep the markers.

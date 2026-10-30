@@ -10,8 +10,9 @@ Rune is not finished. These are the issues found by the trials and by reading th
 | `chanter_cast_has()` is always `false` | `Chanter/Entity.php` | It reads `$CHANTER_CAST` without `global $CHANTER_CAST`. |
 | `Keeper::echo()` cannot write | `Keeper/Entity.php` · `keeper_echo_set()` | It passes one path map to `forger_fix()`, which expects a list → glitch. Reading works. |
 | `weaver_item($file, [...])` with data glitches | `Weaver/Entity.php` · `weaver_item()` | It calls `weaver_bind()` instead of `weaver_bind_multiple()` → "Array to string conversion". Bind the result with `Weaver::bind()` meanwhile. |
-| Glitch screen labels swapped | `Keeper/Entity.php` · `keeper_glitch_message()` | *On Line Number* shows the file; *File Location* shows the line. |
-| `.echoes` follows the current folder | `Aether/Ether.php`, `Keeper/Ether.php` | `KEEPER_ECHOES = getcwd() . '/.echoes/' . PHP_SELF`. `php realm/cast` from the parent writes `.echoes/realm/cast/`; inside `realm/` it writes `realm/.echoes/cast/` → two memories. See below. |
+| An artefact with exactly one shard breaks | `@bindrune/chanter/artefact/cast.php` · the parser | A block with one line is read as a string: `--inspect` glitches, `--revoke` says *success* but does not write the shard. Carry none, or two and more. |
+| `grimoire --rune=<unknown>` | `@bindrune/chanter/grimoire/cast.php` | Fatal error (class not found) instead of a message. |
+| Exura templates on Linux | `@bindrune/awakening/src/*Exura*.rune` | Shards are stored with Windows paths (`src/exura/\exura.*`); revoking them on Linux writes odd file names. |
 
 ## Sentinel
 | Issue | What happens |
@@ -19,7 +20,6 @@ Rune is not finished. These are the issues found by the trials and by reading th
 | `--invoke=Keeper` adds no `begin()`/`end()` | Without `Keeper::begin()` nothing is saved, yet `Keeper::item()` returns `true`. Add them by hand. |
 | Names are `ucfirst(strtolower())` | `MYWhisper` becomes `Mywhisper` (the name `--create-rune` itself suggests). |
 | `--revoke` does not validate the rune name | Unknown names are not refused like in `--invoke`. |
-| `--phantasm-up=<unknown>` | Fatal error (class not found) instead of a message. |
 
 ## Contract and text
 - Some `#NOTE`s are inaccurate: Keeper `begin`/`end`, generic `end()`, "placeholder" for `cipher()` / `forger()`. Fix the `#NOTE`, then `--phantasm-fix-note`.
@@ -32,10 +32,7 @@ Rune is not finished. These are the issues found by the trials and by reading th
 ## Planned work
 | Task | State | Plan |
 |---|---|---|
-| Shebang in every template | decided, not done | Every `cast` without `.php` starts with `#!/usr/bin/env php`; re-encode the Awakening `.rune` templates, keep it through artefact and Sentinel round trips. |
-| `.echoes` next to its runite | noted, needs a choice | (1) Keeper only: echoes from `dirname(realpath(SCRIPT_FILENAME))`; or (2) `AETHER_REPO` = runite folder, `AETHER_FILE` = name only (wider effect). Test: a runite in a subfolder keeps one `.echoes` whether it is run from inside or from the parent. |
 | Altar → Exura | postponed | Altar still uses Nirvana, runs `start cmd /k` (Windows only) with unsanitised POST input, and old paths (`.echoes/rune.php/`, `shards/`). See [Altar](altar.md). |
-| Float versions | open decision | `1.10` counts as `1.1`. See [Versioning](versioning.md). |
 
 ## Not tested yet
 - Specter on macOS (Terminal via `osascript`) — written, never run on a Mac.

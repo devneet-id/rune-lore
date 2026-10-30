@@ -20,7 +20,7 @@ Only a spell, no cast — so `Chanter::end()` runs the `rune` cast (the main scr
 {
   "FILE": "cast",
   "REPO": "_act2",
-  "VERSION": "1.11",
+  "VERSION": "1.20.110",
   "CAST": {
     "artefact": ["artefact", "artefact", "To handle with shard & artefact."],
     "grimoire": ["grimoire", "grimoire", "will help you read the system structure and flow."],
@@ -45,8 +45,8 @@ Only a spell, no cast — so `Chanter::end()` runs the `rune` cast (the main scr
 | Key | What |
 |---|---|
 | `FILE` | the runite (`AETHER_FILE`) |
-| `REPO` | the folder name it was run from |
-| `VERSION` | `AETHER_VERSION` — Aether's own version line, **not** the footer `Version=` |
+| `REPO` | the name of the runite's folder |
+| `VERSION` | the version of Rune from the origin runes (`aether_version()`) — the release version |
 | `CAST` | every cast: `[name, signature with spells, echo]` |
 | `SIZE` | the runite file, in bytes |
 | `MEMORY` | memory used and peak, in bytes |

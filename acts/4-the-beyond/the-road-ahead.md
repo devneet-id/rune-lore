@@ -5,12 +5,9 @@
 You came from the void, resonated with each rune, understood the flow, made runes of your own — and now you can keep Rune itself. What is left is not a lesson. It is the road.
 
 ## Near
-- **Shebang everywhere.** Every template `cast` starts with `#!/usr/bin/env php`.
-- **`.echoes` next to its runite**, from any folder.
-- **The open bugs** in [Known Issues](known-issues.md): `chanter_cast_has`, `Keeper::echo()`, `weaver_item()`, the glitch labels, Sentinel names and `begin`/`end`.
+- **The open bugs** in [Known Issues](known-issues.md): `chanter_cast_has`, `Keeper::echo()`, `weaver_item()`, the one-shard artefact, Sentinel names and `begin`/`end`.
 - **Phantasm notes** that do not yet tell the truth.
 - **Coverage** beyond 19%: scenarios for Crafter, Specter, Minister, arcane and glitch, artefact round trips, liberation.
-- **A decision on float versions.**
 
 ## Further
 - **Exura** — the simple toolkit for the web, grown after Crafter.

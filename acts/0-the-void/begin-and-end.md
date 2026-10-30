@@ -48,11 +48,11 @@ So a cast is only a promise until `Chanter::end()`. And `Aether::end()` is truly
 ## The footer
 Every run ends with one line:
 ```
-◇Version=1.12.31: ϟExecute=0.0040s, ΞMemory=926.73KB - ^1.10MB
+◇Version=1.20.110: ϟExecute=0.0040s, ΞMemory=926.73KB - ^1.10MB
 ```
 | Sign | Meaning |
 |---|---|
-| `◇Version=` | `1.` + the sum of the Phantasm versions of every rune |
+| `◇Version=` | the version of Rune, counted from the Phantasm version of every rune ([how](../4-the-beyond/versioning.md)) |
 | `ϟExecute=` | how long the run took |
 | `ΞMemory=` | memory used, and `^` the peak |
 

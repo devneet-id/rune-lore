@@ -48,7 +48,7 @@ Aether::end();                                    // 8. footer, then exit
 $ php cast hello --name=Anwar
 Hello, Anwar.
 
-◇Version=1.12.31: ϟExecute=0.0049s, ΞMemory=1.07MB - ^1.26MB
+◇Version=1.20.110: ϟExecute=0.0049s, ΞMemory=1.07MB - ^1.26MB
 ```
 
 ## Step by step

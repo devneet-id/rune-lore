@@ -28,8 +28,8 @@ Without a name (`--create-rune`), Sentinel asks: *Give us the rune name:*
 ```
 A new rune is marked **BETA**, at version **0.1**. Its Phantasm joins the footer at once:
 ```
-◇Version=1.12.31   before
-◇Version=1.12.41   after --create-rune (12.31 + 0.1)
+◇Version=1.20.110   before
+◇Version=1.20.111   after --create-rune (major 0 → middle +0, minor 1 → last +1)
 ```
 
 ## Names

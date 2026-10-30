@@ -24,4 +24,4 @@ Until now Rune gave you its runes. In this Act you give Rune yours. Through the 
 10. [Nested Runites](nested-runites.md) — apps in subfolders
 11. [Share It](share-it.md) — your app as an artefact, and as a template
 
-**Before you start:** you know every rune of [Act 1](../1-first-resonance/README.md) and [Act 2](../2-understanding-its-flow/README.md), and you run each runite from its own folder.
+**Before you start:** you know every rune of [Act 1](../1-first-resonance/README.md) and [Act 2](../2-understanding-its-flow/README.md), and you know `.echoes` stays next to each runite.

@@ -57,7 +57,7 @@ Open `cast`. You will recognise every part from the prologue:
 | `Aether::begin(); Chanter::begin();` … `Chanter::end(); Aether::end();` | [Begin and End](begin-and-end.md) |
 | `// ✦ Main logic lives here` | where your casts go |
 
-The template has no shebang yet. Add `#!/usr/bin/env php` as the first line, so your editor reads `cast` as PHP ([The Cast File](the-cast-file.md)).
+The first line is the shebang `#!/usr/bin/env php`, so your editor reads `cast` as PHP ([The Cast File](the-cast-file.md)). Awakening adds it whenever your file has no `.php` extension.
 
 Its comment header says *"Act. 1 - Understanding Its Flow"*. That label is older than this lore; here, it is your Act 0.
 

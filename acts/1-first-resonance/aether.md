@@ -46,7 +46,7 @@ Whisper::echo('{{color-secondary}}' . count($NOTES) . ' notes · ' . round(aethe
 Every run ends with Aether's footer:
 
 ```
-◇Version=1.12.31: ϟExecute=0.0031s, ΞMemory=937.38KB - ^1.11MB
+◇Version=1.20.110: ϟExecute=0.0031s, ΞMemory=937.38KB - ^1.11MB
 ```
 
 | Part | Meaning |

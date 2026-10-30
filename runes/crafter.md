@@ -6,7 +6,7 @@ Crafter is the builder. An **item** is what you craft, its **seed** is the recip
 
 | | |
 |---|---|
-| **Version** | `1.12` |
+| **Version** | `1.13` |
 | **Mark** | `VOID` |
 | **By** | Anwar Achilles |
 | **Introduced in** | Act 2 · Understanding Its Flow |
@@ -101,4 +101,4 @@ Globals — state that changes as the flow goes on.
 - Crafter is the door to **Exura**, the simple toolkit for websites.
 
 ---
-*Generated from `Crafter/Phantasm.php` (version 1.12). Read it live with `php cast grimoire --rune=Crafter`.*
+*Generated from `Crafter/Phantasm.php` (version 1.13). Read it live with `php cast grimoire --rune=Crafter`.*

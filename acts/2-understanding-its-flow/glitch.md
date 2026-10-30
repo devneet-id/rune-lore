@@ -36,18 +36,16 @@ $ php cast break
  ♦ Severity:
     » EXCEPTION
  ♦ On Line Number:
-    » /home/you/app/cast
- ♦ File Location:
     » 33
+ ♦ File Location:
+    » /home/you/app/cast
  ♦ Message:
     » The seal is broken.
 
  #  T R A C E
 
-◇Version=1.12.31: ϟExecute=0.0095s, ΞMemory=1.09MB - ^1.27MB
+◇Version=1.20.110: ϟExecute=0.0095s, ΞMemory=1.09MB - ^1.27MB
 ```
-
-> **Known issue:** the two labels are swapped. *On Line Number* shows the **file**, *File Location* shows the **line**.
 
 A warning is a glitch too — and it stops the flow just the same. Errors also carry a **trace**: the path the flow took to get there.
 
@@ -72,7 +70,7 @@ $ php cast warn
  ♦ /home/you/app/cast [42]
 ```
 
-Read the trace from the top: your line, then `Chanter::end()` running the cast, then the `Chanter::end()` line in your runite.
+Read the trace from the top: your line, then `Chanter::end()` running the cast, then the `Chanter::end()` line in your runite. A step inside PHP itself (a closure called by `array_map`, for example) has no file and shows as `[internal] [-]`.
 
 ## `glitch.txt`
 
@@ -82,7 +80,7 @@ Every glitch is also written to `.echoes/<runite>/glitch.txt`:
 [2026-10-23 12:52:40] [EXCEPTION] [33] [/home/you/app/cast] The seal is broken.
 ```
 
-`[time] [severity] [line] [file] message` — here the order is right.
+`[time] [severity] [line] [file] message`.
 
 `Keeper::begin()` empties the file at the start of every run, so it holds the glitch of the **last** run only. `keeper_is_glitch()` returns `true` when it is not empty.
 
@@ -97,7 +95,7 @@ So `Keeper::end()` never runs: the [arcane](arcane.md) of a broken run is **not*
 ## Reading a glitch
 
 1. **Message** — what broke.
-2. **Line and file** — remember the labels are swapped; the number is the line.
+2. **Line and file** — where it broke.
 3. **Trace** — which cast, which rune.
 4. Still unsure? Run the cast again after one that works, then `grimoire --arcane` to see how far a good run goes.
 

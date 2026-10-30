@@ -22,7 +22,7 @@ Run the runite. The entrance changes from *The Awaken from Void* to:
 
 ## What it does
 `Rune\Ethereal::liberation()`:
-1. makes `@liberations/` in the **current folder** (`getcwd()`), with a `README.md` copied from Rune's `LIBERATION.md`;
+1. makes `@liberations/` **next to the runite** (wherever you cast it from), with a `README.md` copied from Rune's `LIBERATION.md`;
 2. adds a second autoloader: `Rune\X\…` → `@liberations/X/…`;
 3. defines `LIBERATION` — the path of `@liberations/`.
 
@@ -37,6 +37,6 @@ From then on:
 - Need another Whisper? Make a new rune with its own name — and only liberation runes are yours to change.
 
 ## Remember
-- `@liberations/` follows the folder you run from. Run the runite from its own folder: from anywhere else your runes are not found (`Class "Rune\Ledger\Manifest" not found`) and an empty `@liberations/` appears there.
+- `@liberations/` lives next to the runite: `php lib/cast` from a parent folder finds the same runes as `php cast` inside `lib/`.
 - Without `Rune\Ethereal::liberation()` your runes do not exist, and the liberation spells answer *You are not eligible!!*
 - Old names you may still meet: `@ethereal/`, `@liberation/` — both are now `@liberations/`.

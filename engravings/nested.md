@@ -13,9 +13,5 @@
 ```
 
 ## How it works
-- `.echoes` is created in the folder **the command runs from**. Run each runite from its own folder:
-  ```bash
-  cd realm && php spire
-  ```
-- Running `php realm/spire` from the parent folder writes `.echoes/realm/spire/` in the parent instead — a second memory for the same runite. (Planned: `.echoes` always next to the runite, wherever it runs from.)
+- `.echoes` is always created next to the runite. `cd realm && php spire` and `php realm/spire` from the parent use the same `realm/.echoes/spire/`.
 - The autoload path grows with the depth: `require_once __DIR__ . '/../vendor/autoload.php';`

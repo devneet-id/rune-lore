@@ -6,7 +6,7 @@ Chanter is the gate of the command line. A **cast** is a command, a **spell** is
 
 | | |
 |---|---|
-| **Version** | `1.13` |
+| **Version** | `1.14` |
 | **Mark** | `VOID` |
 | **By** | Anwar Achilles |
 | **Introduced in** | Act 0 · The Void |
@@ -68,7 +68,7 @@ The logic. Other runes call these functions too.
 | `chanter_spell_get( String $name )` | Retrieves the value of a spell argument if it exists |
 | `chanter_spell_chain()` | Builds a full CLI-style spell string from all current spell arguments |
 | `chanter_spell_has( String $name )` | Checks whether a spell is given with a value (not only as a flag) |
-| `chanter_echo_name( String $arg )` | Takes the cast name from a cast signature (`quest --add --rank` -> `quest`) |
+| `chanter_echo_name( String $arg )` | Takes the cast name from a cast signature (`quest --add --rank` -&gt; `quest`) |
 | `chanter_echo_set( String $arg, String $notes )` | Adds notes to the echo data if the entry doesn’t exist yet. |
 | `chanter_echo_get( String $arg )` | Retrieves the echo data for a given cast argument |
 | `chanter_whisper_drain( $run )` | Runs a cast while draining Whisper output, then echoes it at once (zero-trust). |
@@ -104,4 +104,4 @@ Globals — state that changes as the flow goes on.
 - Known issue: `chanter_cast_has()` always returns false.
 
 ---
-*Generated from `Chanter/Phantasm.php` (version 1.13). Read it live with `php cast grimoire --rune=Chanter`.*
+*Generated from `Chanter/Phantasm.php` (version 1.14). Read it live with `php cast grimoire --rune=Chanter`.*

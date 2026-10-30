@@ -35,7 +35,7 @@ SENTINEL :: Phantasm Fix Auto
 [√] Note fixed for phantasm: Ledger
 [√] Update phantasm: Ledger
 ```
-`--phantasm-fix` = node + link + note + version up, in that order. Ledger's Phantasm now holds:
+`--phantasm-fix` = node + link + note, then version up — only when one of them changed the Phantasm (otherwise: *Nothing changed, version kept*). Ledger's Phantasm now holds:
 ```php
   public $version = '0.2';
 
@@ -64,12 +64,12 @@ Every change raises the Phantasm of the rune that changed:
 ```bash
 php cast sentinel --phantasm-up=ledger
 ```
-`0.2` → `0.3`. The minor number grows by one. The footer follows, because it is `1.` + the sum of every Phantasm version:
+`0.2` → `0.3`. The minor number grows by one, and the last number of the footer grows with it — versions are counted as whole numbers ([Versioning](../4-the-beyond/versioning.md)):
 ```
-◇Version=1.12.51   Ledger 0.2
-◇Version=1.12.61   Ledger 0.3
+◇Version=1.20.112   Ledger 0.2
+◇Version=1.20.113   Ledger 0.3
 ```
-**Known issue:** after `.9` comes `.10` (`0.9` → `0.10`), but the footer adds versions as numbers, so `0.10` counts as `0.1` and the footer drops (`1.13.21` → `1.12.41`). Until this is fixed, plan your versions around it.
+After `.9` comes `.10` (`0.9` → `0.10`), and the footer still moves up by one. A version must be `<major>.<minor>`; anything else (`1.2.3`) is refused and must be fixed by hand. A rune that does not exist answers *Rune not found*.
 
 ## The mark
 `BETA` while it settles. Change it by hand: `VOID` for a rune that is held back or returns nothing on purpose, `EXIST` when it is whole and stable — the opposite of VOID. A rune moves VOID → BETA → EXIST. The Grimoire warns about BETA.

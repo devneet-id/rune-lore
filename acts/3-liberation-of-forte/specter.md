@@ -83,6 +83,5 @@ Chanter::cast('serve', function() {
 
 ## Remember
 - No Keeper, no soul: Specter writes everything in `.echoes/<runite>/`.
-- Run the runite from its own folder ([why](nested-runites.md)).
 
 → Reference: [runes/specter.md](../../runes/specter.md)

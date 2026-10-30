@@ -29,7 +29,7 @@ php cast
 
  #  R E G I S T E R E D.
 
-◇Version=1.12.31: ϟExecute=0.0039s, ΞMemory=923.52KB - ^1.10MB
+◇Version=1.20.110: ϟExecute=0.0039s, ΞMemory=923.52KB - ^1.10MB
 ```
 *(The banner above STATS is left out here.)*
 
@@ -84,7 +84,7 @@ Each run ends with the footer. Run `php cast` again: your cast now stands under 
 
 ## Read the footer
 ```
-◇Version=1.12.31: ϟExecute=0.0051s, ΞMemory=921.83KB - ^1.10MB
+◇Version=1.20.110: ϟExecute=0.0051s, ΞMemory=921.83KB - ^1.10MB
 ```
 The Rune version, how long it took, and how much memory it used. See [Begin and End](begin-and-end.md#the-footer).
 

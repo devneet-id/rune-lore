@@ -59,9 +59,9 @@ Two constants from Aether describe the runite while it runs:
 
 | Constant | Value |
 |---|---|
-| `AETHER_FILE` | the runite as you typed it, e.g. `cast` |
-| `AETHER_REPO` | the folder you ran it from |
+| `AETHER_FILE` | the runite as you typed it, e.g. `cast` or `realm/cast` |
+| `AETHER_REPO` | the runite's own folder — the same wherever you cast it from |
 
-Run a runite from its own folder. It matters more once it starts to remember, in Act 1.
+Because `AETHER_REPO` is the runite's folder, everything the runite keeps (Act 1) stays next to it.
 
 Next: [Manifest](manifest.md)

@@ -98,7 +98,7 @@ A rune moves **VOID → BETA → EXIST**. There are only these three marks. DEVE
 | `ϟ` | stopwatch / stepwatch |
 | `[ϻ]` | a Manifest call |
 | `[ͱ]` | an Entity call |
-| `◇Version=` | `1.` + the sum of all Phantasm versions (also the release tag) |
+| `◇Version=` | the version of Rune: `<major>.<minor + rune majors>.<rune minors>`, whole numbers; counted from the origin runes it is the release tag |
 | `ϟExecute=` | run time |
 | `ΞMemory=` | memory and peak |
 | `[ᚱᚾ]` | a block in a `.rune` artefact: `ARTEFACT`, `RUNITE`, `ECHOES`, `SHARDS` |

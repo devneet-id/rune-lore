@@ -34,7 +34,7 @@ php cast
  ♦ php8 cast greet --name --loud
     ≈ Greet someone. --name=Anwar --loud
 
-◇Version=1.12.31: ϟExecute=0.0038s, ΞMemory=926.56KB - ^1.10MB
+◇Version=1.20.110: ϟExecute=0.0038s, ΞMemory=926.56KB - ^1.10MB
 ```
 
 - **DEFAULT** — the built-in casts every runite has: [artefact](../../runites/artefact.md), [grimoire](../../runites/grimoire.md), [rune](../../runites/rune.md), [sentinel](../../runites/sentinel.md).

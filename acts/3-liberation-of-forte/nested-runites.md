@@ -2,10 +2,10 @@
 
 > Apps inside subfolders.
 
-Runites can live in subfolders, grouped by realm. Each keeps its memory next to itself — as long as you call it from its own folder.
+Runites can live in subfolders, grouped by realm. Each keeps its memory next to itself, wherever it is cast from.
 
 ```
-07-nested/
+app/
 ├── cast              → .echoes/cast/
 └── realm/
     ├── cast          → realm/.echoes/cast/
@@ -17,24 +17,18 @@ Runites can live in subfolders, grouped by realm. Each keeps its memory next to 
 require_once __DIR__ . '/../vendor/autoload.php';   // realm/spire
 ```
 
-## Run from its own folder
-```bash
-cd realm && php spire
-```
-Today `.echoes` (and `@liberations/`) follow the folder **the command runs from**, not the runite (`AETHER_REPO = getcwd()`):
+## Cast from anywhere
+`AETHER_REPO` is the runite's own folder, so both commands use the same memory:
 
-| Command | Memory written to |
+| Command | Memory |
 |---|---|
-| `cd realm && php spire` | `realm/.echoes/spire/` ✓ |
-| `php realm/spire` (from the parent) | `.echoes/realm/spire/` — a second memory |
+| `cd realm && php spire` | `realm/.echoes/spire/` |
+| `php realm/spire` (from the parent) | `realm/.echoes/spire/` — the same one |
 
-A runite in liberation mode cast from another folder is worse: its runes are not found, and an empty `@liberations/` appears in that folder.
-
-**Planned:** `.echoes` always next to its runite, wherever it is run from. Until then: one runite, one folder to run it from.
+A runite in liberation mode finds its `@liberations/` the same way, next to itself.
 
 ## A runite that visits another
-From the parent, cast an inner runite **inside its folder**:
+From the parent, cast an inner runite by its path:
 ```php
-$command = 'cd ' . escapeshellarg(__DIR__ . '/realm') . ' && ' . escapeshellarg(PHP_BINARY) . ' spire where';
+$command = escapeshellarg(PHP_BINARY) . ' ' . escapeshellarg(__DIR__ . '/realm/spire') . ' where';
 ```
-This is what scenario 07's `visit` cast does.

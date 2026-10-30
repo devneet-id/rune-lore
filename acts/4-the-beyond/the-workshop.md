@@ -39,7 +39,7 @@ Chanter::cast('test', function() {
 ```
 - Catch PHP warnings as errors (`set_error_handler` → `ErrorException`) so a glitch fails one check instead of ending the run.
 - Back up and restore any data the trial touches.
-- Run each runite **from its own folder** — Rune uses `getcwd()`.
+- A runite can be cast from any folder — Rune keeps `.echoes` next to it.
 
 ```bash
 cd workshop/scenario/01-greeting
@@ -50,7 +50,7 @@ php cast test
 ```bash
 php liberate                                  # "The Liberation of Forte" on the main screen
 php liberate grimoire --rune=Weaver           # read the contract
-php liberate sentinel --phantasm-fix=Weaver   # node + link + note + version
+php liberate sentinel --phantasm-fix=Weaver   # node + link + note (+ version, only if changed)
 php liberate sentinel --phantasm-up=Weaver    # only raise the version
 ```
 `--phantasm-*` spells are refused outside liberation mode ("You are not eligible!!").

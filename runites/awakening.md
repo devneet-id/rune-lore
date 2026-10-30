@@ -26,7 +26,7 @@ php cast
      | How to Casting | + casts, spells and notes examples |
      | Website with Exura (SD) | + Crafter, Exura |
      | Website with Exura (SD) to Vercel | + Crafter, Exura, Vercel |
-2. The artefact is opened (runic → base64 → text): its **runite** replaces your file, its **shards** are written next to it.
+2. The artefact is opened (runic → base64 → text): its **runite** replaces your file (starting with `#!/usr/bin/env php` when your file has no `.php`), its **shards** are written next to it.
 3. *Awakening successfully. Checkout your runite with `php cast`.*
 
 ## Notes

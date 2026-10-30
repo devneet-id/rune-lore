@@ -6,7 +6,7 @@ Aether is the flow that runs beneath everything. It is the first rune to awaken 
 
 | | |
 |---|---|
-| **Version** | `1.17` |
+| **Version** | `1.18` |
 | **Mark** | `VOID` |
 | **By** | Anwar Achilles |
 | **Introduced in** | Act 0 · The Void |
@@ -64,6 +64,7 @@ The logic. Other runes call these functions too.
 | `aether_arcane_enable()` | Enable arcane trace logging |
 | `aether_arcane_disable()` | Disable arcane trace logging |
 | `aether_arcane_pretty_print()` | Prints the arcane records of this flow (development). |
+| `aether_version( Bool $all = false )` | Version of Rune: &lt;major AETHER_VERSION&gt;.&lt;minor AETHER_VERSION + sum of rune majors&gt;.&lt;sum of rune minors&gt;, read as integers; $all adds liberation runes. |
 | `aether_list_runes()` | Lists origin runes plus @liberations runes in liberation mode. |
 
 ## Ether
@@ -72,8 +73,8 @@ Constants — truth that never changes.
 | Constant | Note |
 |---|---|
 | `AETHER` | Flag that the Aether flow is active. |
-| `AETHER_FILE` | The runite being cast (the file run by PHP, e.g. cast). |
-| `AETHER_REPO` | The working folder of the runite (getcwd). |
+| `AETHER_FILE` | The runite being cast, as it was typed (e.g. cast, realm/cast). |
+| `AETHER_REPO` | The folder of the runite itself, wherever it is cast from (falls back to getcwd). |
 | `AETHER_VERSION` | Version of the Rune core. |
 | `AETHER_COPYRIGHT` | Copyright line placed in crafted and artefact output. |
 | `AETHER_RUNE_LOCATION` | Folder of the origin runes. |
@@ -106,9 +107,9 @@ Globals — state that changes as the flow goes on.
 | `$AETHER_ARCANE_STATE` | Whether arcane is recorded (enable/disable). |
 
 ## Notes
-- `aether_list_runes()` lists the ten origin runes, plus the runes in `@liberations/` when the runite is in liberation mode. Their Phantasm versions are summed into the footer `Version=`.
-- `AETHER_REPO` is the folder the command is run from (`getcwd()`), and `AETHER_FILE` the runite as typed. Run a runite from its own folder.
+- `aether_list_runes()` lists the ten origin runes, plus the runes in `@liberations/` when the runite is in liberation mode. `aether_version()` adds their Phantasm versions as whole numbers: `<major AETHER_VERSION>.<minor AETHER_VERSION + rune majors>.<rune minors>`. The footer `Version=` counts liberation runes too; the release counts origin runes only.
+- `AETHER_REPO` is the runite's own folder, wherever it is cast from, and `AETHER_FILE` the runite as typed (`cast`, `realm/cast`).
 - Constants `AETHER_LOGS`, `AETHER_ECHOES_RUNE`, `AETHER_ECHOES_INFORMATION`, `AETHER_ECHOES_ARCANE(S)`, `AETHER_ECHOES_ARTEFACT` are legacy — Keeper owns the echoes now.
 
 ---
-*Generated from `Aether/Phantasm.php` (version 1.17). Read it live with `php cast grimoire --rune=Aether`.*
+*Generated from `Aether/Phantasm.php` (version 1.18). Read it live with `php cast grimoire --rune=Aether`.*

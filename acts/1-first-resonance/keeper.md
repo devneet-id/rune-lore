@@ -74,18 +74,15 @@ CURRENT ARCANE STATS:
 
 Reading the arcane is [Act 2](../2-understanding-its-flow/arcane.md). For now: every step of the run is there.
 
-## Run it from its own folder
-`.echoes` is made in the folder you run from, not the folder of the runite (planned to change). From the parent folder:
+## Cast it from anywhere
+`.echoes` always lives next to the runite, not in the folder you run from. From the parent folder:
 
 ```bash
 cd ..
 php notes/cast notes
 ```
-```
-No notes yet.
-```
 
-…and a second `.echoes/notes/cast/` appears in the parent. Always `cd` into the runite's folder first.
+…reads the same `notes/.echoes/cast/` — the same memory, no second `.echoes` in the parent.
 
 ## Trap
 Known issue: writing with `Keeper::echo()` glitches. Use `Keeper::item()` for data, and [Forger](forger.md) for plain files.
