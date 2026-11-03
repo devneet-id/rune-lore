@@ -65,7 +65,8 @@ The logic. Other runes call these functions too.
 | `aether_arcane_disable()` | Disable arcane trace logging |
 | `aether_arcane_pretty_print()` | Prints the arcane records of this flow (development). |
 | `aether_version( Bool $all = false )` | Version of Rune: &lt;major AETHER_VERSION&gt;.&lt;minor AETHER_VERSION + sum of rune majors&gt;.&lt;sum of rune minors&gt;, read as integers; $all adds liberation runes. |
-| `aether_list_runes()` | Lists origin runes plus @liberations runes in liberation mode. |
+| `aether_list_runes()` | Lists origin runes (one by one) plus @liberation runes in liberation mode. |
+| `aether_list_liberation()` | Lists the runes in @liberation/ (liberation mode only): every folder with a PascalCase name. |
 
 ## Ether
 Constants — truth that never changes.
@@ -76,7 +77,7 @@ Constants — truth that never changes.
 | `AETHER_FILE` | The runite being cast, as it was typed (e.g. cast, realm/cast). |
 | `AETHER_REPO` | The folder of the runite itself, wherever it is cast from (falls back to getcwd). |
 | `AETHER_VERSION` | Version of the Rune core. |
-| `AETHER_COPYRIGHT` | Copyright line placed in crafted and artefact output. |
+| `AETHER_COPYRIGHT` | Copyright line placed in crafted and relic output. |
 | `AETHER_RUNE_LOCATION` | Folder of the origin runes. |
 | `AETHER_SELF_WEAVER` | Folder of Aether"s own weaver templates. |
 | `AETHER_LOGS` | Legacy logs folder inside .echoes (kept for old runites). |
@@ -85,8 +86,8 @@ Constants — truth that never changes.
 | `AETHER_ECHOES_INFORMATION` | Legacy information file of the runite echoes. |
 | `AETHER_ECHOES_ARCANE` | Legacy arcane file of the runite echoes. |
 | `AETHER_ECHOES_ARCANES` | Legacy arcanes file of the runite echoes. |
-| `AETHER_ECHOES_ARTEFACT` | Legacy artefact folder of the runite echoes. |
 | `AETHER_PHP_VERSION` | PHP version the Rune core was built with. |
+| `AETHER_RUNES` | The origin runes of Rune, one by one (the release counts these only). |
 
 ## Essence
 Globals — state that changes as the flow goes on.
@@ -107,9 +108,9 @@ Globals — state that changes as the flow goes on.
 | `$AETHER_ARCANE_STATE` | Whether arcane is recorded (enable/disable). |
 
 ## Notes
-- `aether_list_runes()` lists the ten origin runes, plus the runes in `@liberations/` when the runite is in liberation mode. `aether_version()` adds their Phantasm versions as whole numbers: `<major AETHER_VERSION>.<minor AETHER_VERSION + rune majors>.<rune minors>`. The footer `Version=` counts liberation runes too; the release counts origin runes only.
+- `aether_list_runes()` lists the ten origin runes, plus the runes in `@liberation/` (PascalCase folders) when the runite is in liberation mode. `aether_version()` adds their Phantasm versions as whole numbers: `<major AETHER_VERSION>.<minor AETHER_VERSION + rune majors>.<rune minors>`. The footer `Version=` counts liberation runes too; the release counts origin runes only.
 - `AETHER_REPO` is the runite's own folder, wherever it is cast from, and `AETHER_FILE` the runite as typed (`cast`, `realm/cast`).
-- Constants `AETHER_LOGS`, `AETHER_ECHOES_RUNE`, `AETHER_ECHOES_INFORMATION`, `AETHER_ECHOES_ARCANE(S)`, `AETHER_ECHOES_ARTEFACT` are legacy — Keeper owns the echoes now.
+- Constants `AETHER_LOGS`, `AETHER_ECHOES_RUNE`, `AETHER_ECHOES_INFORMATION`, `AETHER_ECHOES_ARCANE(S)` are legacy (`AETHER_ECHOES_ARTEFACT` is gone) — Keeper owns the echoes now.
 
 ---
-*Generated from `Aether/Phantasm.php` (version 1.18). Read it live with `php cast grimoire --rune=Aether`.*
+*Generated from `Aether/Phantasm.php` (version 1.19). Read it live with `php cast grimoire --runic=Aether`.*

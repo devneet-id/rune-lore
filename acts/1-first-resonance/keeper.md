@@ -50,7 +50,7 @@ notes/
         ├── arcane.txt        the trace of the last run
         ├── arcanes/          the trace of every run, by date
         ├── glitch.txt        the last error, if any
-        └── shard.json        files that travel with the artefact
+        └── shard.json        files that travel with the relic
 ```
 
 ```json

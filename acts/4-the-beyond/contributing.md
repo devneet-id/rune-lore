@@ -12,7 +12,7 @@ Anyone who keeps the laws can keep Rune. You do not need its first creator — y
 ## 2. Find the work
 - [Known Issues](known-issues.md) — bugs with their files.
 - A failing trial in your workshop.
-- A Phantasm that no longer matches the code (`grimoire --rune=X` vs the source).
+- A Phantasm that no longer matches the code (`grimoire --runic=X` vs the source).
 - An issue on GitHub. Open one if none exists: what you ran, what you saw, what you expected.
 
 ## 3. Prove it
@@ -30,13 +30,13 @@ The upstream `CONTRIBUTING.md` shows a handy way to build a new node: write its 
 ## 5. Update the contract
 From your liberation runite:
 ```bash
-php liberate sentinel --phantasm-fix-node=Whisper    # nodes from the code
-php liberate sentinel --phantasm-fix-note=Whisper    # #NOTE → nodes
-php liberate sentinel --phantasm-fix-link=Whisper    # runes it uses
-php liberate sentinel --phantasm-up=Whisper          # raise the version
-php liberate grimoire --rune=Whisper                 # read it back
+php liberate sentinel --phantasm-repair=Whisper --mode=node   # nodes from the code
+php liberate sentinel --phantasm-repair=Whisper --mode=note   # #NOTE → nodes
+php liberate sentinel --phantasm-repair=Whisper --mode=link   # runes it uses
+php liberate sentinel --phantasm-upgrade=Whisper              # raise the version
+php liberate grimoire --runic=Whisper                         # read it back
 ```
-`--phantasm-fix=Whisper` runs node + link + note + version at once.
+`--phantasm-repair=Whisper` runs node + link + note + version at once; `--phantasm-repair --all` does it for every rune.
 
 ## 6. Test again
 Your trial passes, and nothing else broke: run every trial in your workshop again.
@@ -63,7 +63,7 @@ What changes, in two sentences.
 - Include the trial (or the test cast) so the reviewer can run it.
 
 ## A new origin rune?
-New runes start as **liberation runes** in `@liberations/` ([Create a Rune](../3-liberation-of-forte/create-rune.md)). An origin rune is added only when a liberation rune has proved a purpose no origin rune has. Propose it in an issue first, with its Phantasm and its runites.
+New runes start as **liberation runes** in `@liberation/` ([Create a Rune](../3-liberation-of-forte/create-rune.md)). An origin rune is added only when a liberation rune has proved a purpose no origin rune has. Propose it in an issue first, with its Phantasm and its runites.
 
 ## Contributing to the lore
 Changed behaviour → change the lore in the same round. See [Keeping the Lore](keeping-the-lore.md).

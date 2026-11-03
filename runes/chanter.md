@@ -2,7 +2,7 @@
 
 > Encapsulates processes and CLI-style operations to maintain immutability—structures input, spell logic, and execution flow into controlled, traceable, and reusable command definitions.
 
-Chanter is the gate of the command line. A **cast** is a command, a **spell** is its option, and an **echo** is the note shown on the main screen.
+Chanter is the gate of the command line. A **cast** is a command, a **spell** is its option, and an **echo** is the note shown on the main hall.
 
 | | |
 |---|---|
@@ -44,7 +44,7 @@ Call from your runite: `Chanter::name(...)`.
 
 | Method | Note |
 |---|---|
-| `begin()` | Begins Chanter: loads the built-in casts from @bindrune/chanter. |
+| `begin()` | Begins Chanter: loads the built-in runites from @runite/ (awakening only through Rune\Ethereal::awakening). |
 | `end()` | Prepares and executes a spell casting based on provided arguments or from file. |
 | `cast( String $arg, ?Callable $execute = NULL, String $echo = "" )` | Gets or sets a spell cast definition based on input and returns the result. |
 | `spell( String $key, Mixed $value = NULL, Mixed $fail = false )` | Gets or sets a spell definition by key and returns the result. |
@@ -97,11 +97,11 @@ Globals — state that changes as the flow goes on.
 | `$CHANTER_ECHO` | Holds text or data to be echoed after cast execution |
 
 ## Notes
-- `Chanter::begin()` loads the built-in casts (rune, grimoire, sentinel, artefact); `Chanter::end()` runs the cast asked on the command line.
+- `Chanter::begin()` loads the built-in runites (rune, grimoire, sentinel, reliquary); `Chanter::end()` runs the cast asked on the command line.
 - Spell values keep `0` and `+`; use quotes or `%20` for spaces.
 - A spell set from code (`Chanter::spell('x', 'v')`) is read on the next cast — by design.
 - `--zero-trust` runs the cast with the arcane off and the output drained.
 - Known issue: `chanter_cast_has()` always returns false.
 
 ---
-*Generated from `Chanter/Phantasm.php` (version 1.14). Read it live with `php cast grimoire --rune=Chanter`.*
+*Generated from `Chanter/Phantasm.php` (version 1.15). Read it live with `php cast grimoire --runic=Chanter`.*

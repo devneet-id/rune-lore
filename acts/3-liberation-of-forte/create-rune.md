@@ -7,17 +7,17 @@ A rune begins as a name and five empty files. Sentinel carves them; you engrave 
 ## Create
 In liberation mode:
 ```bash
-php cast sentinel --create-rune=ledger
+php cast sentinel --runic-create=Ledger
 ```
 ```
-SENTINEL :: Create Rune
-[√] Success create rune: Ledger
+SENTINEL :: Runic Create
+[√] Rune created: @liberation/Ledger
 ```
-Without a name (`--create-rune`), Sentinel asks: *Give us the rune name:*
+Without a name (`--runic-create`), Sentinel asks: *Give us the rune name:*
 
 ## What you get
 ```
-@liberations/
+@liberation/
 ├── README.md
 └── Ledger/
     ├── Ether.php       define('LEDGER', true);
@@ -28,22 +28,22 @@ Without a name (`--create-rune`), Sentinel asks: *Give us the rune name:*
 ```
 A new rune is marked **BETA**, at version **0.1**. Its Phantasm joins the footer at once:
 ```
-◇Version=1.20.110   before
-◇Version=1.20.111   after --create-rune (major 0 → middle +0, minor 1 → last +1)
+◇Version=1.20.114   before
+◇Version=1.20.115   after --runic-create (major 0 → middle +0, minor 1 → last +1)
 ```
 
 ## Names
-- The name is written `Ucfirst`: `ledger`, `LEDGER`, `Ledger` → `Ledger`.
+- A PascalCase name is kept as you write it: `Ledger`, `EchoBook`. Any other is written `Ucfirst`: `ledger`, `LEDGER` → `Ledger`.
 - An origin name is refused:
   ```
-  [!] 'Whisper' is an origin rune, use another name (e.g. MYWhisper).
+  [!] 'Whisper' is an origin rune, use another name (e.g. MyWhisper).
   ```
-- **Known issue:** the suggested `MYWhisper` becomes `Mywhisper` (the name is lowered, then the first letter raised). Pick a name that reads well in `Ucfirst`, like `Ledger` or `Echobook`.
+- A rune that already exists is not created again.
 
-## Remove
+## Delete
 ```bash
-php cast sentinel --remove-rune=ledger
+php cast sentinel --runic-delete=Ledger
 ```
-The folder is deleted **and** the rune is revoked from your runite, so no `use` line points to nothing. There is no undo — commit first.
+The folder is deleted **and** the rune is removed from your runite, so no `use` line points to nothing. There is no undo — commit first.
 
 Next: [Engrave a Rune](engrave-a-rune.md).

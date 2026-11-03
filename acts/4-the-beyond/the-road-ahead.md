@@ -5,14 +5,14 @@
 You came from the void, resonated with each rune, understood the flow, made runes of your own — and now you can keep Rune itself. What is left is not a lesson. It is the road.
 
 ## Near
-- **The open bugs** in [Known Issues](known-issues.md): `chanter_cast_has`, `Keeper::echo()`, `weaver_item()`, the one-shard artefact, Sentinel names and `begin`/`end`.
+- **The open bugs** in [Known Issues](known-issues.md): `chanter_cast_has`, `Keeper::echo()`, `weaver_item()`, the Exura relics on Linux, `--runite-remove` names and `begin`/`end`.
 - **Phantasm notes** that do not yet tell the truth.
-- **Coverage** beyond 19%: scenarios for Crafter, Specter, Minister, arcane and glitch, artefact round trips, liberation.
+- **Coverage** beyond 19%: scenarios for Crafter, Specter, Minister, arcane and glitch, relic round trips, liberation, federation.
 
 ## Further
 - **Exura** — the simple toolkit for the web, grown after Crafter.
 - **Altar rebuilt with Exura.**
-- **One repo per example app**, and **`rune-artefacts`** — templates from anywhere.
+- **More relics in [the reliquary](reliquary.md)** — one repo per example app (the Exura sites first), and forks that join the federation.
 - **Minister** settled (VOID pattern, a tested familiar).
 - **Awakening labels** aligned with the Acts of this lore.
 

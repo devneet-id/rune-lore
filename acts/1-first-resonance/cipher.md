@@ -56,7 +56,7 @@ Cipher has more than ids:
 | `Cipher::base64($text)` / `Cipher::base64($b64, 1)` | base64 and back |
 | `Cipher::runic($text, false, 'elder_futhark')` / `…, true, …)` | text into runes and back |
 
-The runic cipher is a **lore seal, not encryption**: it swaps lower-case letters for runes, one for one. Seal base64, not raw text. It is what seals your app in the [Artefact](artefact.md). → Recipe: [secrets](../../engravings/secrets.md)
+The runic cipher is a **lore seal, not encryption**: it swaps lower-case letters for runes, one for one. Seal base64, not raw text. It is what seals your app in a [Relic](relic.md). → Recipe: [secrets](../../engravings/secrets.md)
 
 ## The runite at the end of Part II
 Four runes from Act 0, three from the Sentinel, and the app remembers:
@@ -165,4 +165,4 @@ Keeper::end();
 Aether::end();
 ```
 
-Next: [Artefact](artefact.md).
+Next: [Relic](relic.md).

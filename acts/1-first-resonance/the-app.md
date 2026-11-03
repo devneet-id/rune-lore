@@ -34,7 +34,7 @@ notes/
 ```
 
 ## The skeleton
-Start from the Blank Starter. Keep the three markers — Sentinel writes at them in Part II.
+Start from the blank runite of Awakening. Keep the three markers — Sentinel writes at them in Part II.
 
 ```php
 #!/usr/bin/env php

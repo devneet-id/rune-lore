@@ -25,7 +25,7 @@ require_once __DIR__ . '/../vendor/autoload.php';   // realm/spire
 | `cd realm && php spire` | `realm/.echoes/spire/` |
 | `php realm/spire` (from the parent) | `realm/.echoes/spire/` — the same one |
 
-A runite in liberation mode finds its `@liberations/` the same way, next to itself.
+A runite in liberation mode finds its `@liberation/` the same way, next to itself.
 
 ## A runite that visits another
 From the parent, cast an inner runite by its path:

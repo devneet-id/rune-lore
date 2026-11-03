@@ -99,4 +99,4 @@ Globals — state that changes as the flow goes on.
 - Whisper's style values are not kept in the Weaver bond.
 
 ---
-*Generated from `Whisper/Phantasm.php` (version 1.13). Read it live with `php cast grimoire --rune=Whisper`.*
+*Generated from `Whisper/Phantasm.php` (version 1.13). Read it live with `php cast grimoire --runic=Whisper`.*

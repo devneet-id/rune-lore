@@ -95,4 +95,4 @@ Globals — state that changes as the flow goes on.
 - The soul lives in `.echoes/<runite>/soul.json`, so Keeper must be engraved.
 
 ---
-*Generated from `Specter/Phantasm.php` (version 1.9). Read it live with `php cast grimoire --rune=Specter`.*
+*Generated from `Specter/Phantasm.php` (version 1.9). Read it live with `php cast grimoire --runic=Specter`.*

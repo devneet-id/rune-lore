@@ -2,7 +2,7 @@
 
 > A runite can describe itself.
 
-Strike a runite and it resonates: it tells what it is — its name, its casts, the runes awake in it, its size and the memory it needs. Keeper keeps that answer as `rune.json`, and the artefact carries it when the runite travels.
+Strike a runite and it resonates: it tells what it is — its name, its casts, the runes awake in it, its size and the memory it needs. Keeper keeps that answer as `rune.json`, and the relic carries it when the runite travels.
 
 ## In code
 
@@ -12,7 +12,7 @@ Nothing to engrave. Every runite with Keeper can resonate:
 $ php cast --resonance
 ```
 
-Only a spell, no cast — so `Chanter::end()` runs the `rune` cast (the main screen) with `--resonance`. The main screen sees the spell and writes `.echoes/<runite>/rune.json`.
+Only a spell, no cast — so `Chanter::end()` runs the `rune` cast (the main hall) with `--resonance`. The main hall sees the spell and writes `.echoes/<runite>/rune.json`.
 
 ## `rune.json`
 
@@ -20,12 +20,12 @@ Only a spell, no cast — so `Chanter::end()` runs the `rune` cast (the main scr
 {
   "FILE": "cast",
   "REPO": "_act2",
-  "VERSION": "1.20.110",
+  "VERSION": "1.20.114",
   "CAST": {
-    "artefact": ["artefact", "artefact", "To handle with shard & artefact."],
-    "grimoire": ["grimoire", "grimoire", "will help you read the system structure and flow."],
-    "rune": ["rune", "rune", "base of the rune"],
-    "sentinel": ["sentinel", "sentinel", "Help you with maintain your runite as assistant."],
+    "grimoire": ["grimoire", "grimoire", "Read the runes and the arcane of this runite."],
+    "reliquary": ["reliquary", "reliquary", "Make, open and share relics (runite ⇄ .rune)."],
+    "rune": ["rune", "rune", "The main hall of the runite."],
+    "sentinel": ["sentinel", "sentinel", "Help you maintain your runite as an assistant."],
     "hello": ["hello", "hello --name", "Say hello."]
   },
   "SIZE": 2301,
@@ -54,12 +54,12 @@ Only a spell, no cast — so `Chanter::end()` runs the `rune` cast (the main scr
 
 ## Who reads it
 
-- **The main screen.** `php cast` lists what the echoes hold: `Echoes » Rune, Arcane, Glitch, Shards,` — *Rune* means `rune.json` is there.
-- **The artefact.** `artefact --invoke` puts it in the `ECHOES` block of the `.rune` file. Never resonated? The artefact builds it itself, so nothing is lost. See [Artefact](../../runites/artefact.md).
+- **The main hall.** `php cast` lists what the echoes hold: `Echoes » Rune, Arcane, Glitch, Shards,` — *Rune* means `rune.json` is there.
+- **The relic.** `reliquary --runite-relic` puts it in the `ECHOES` block of the `.rune` file. Never resonated? The relic builds it itself, so nothing is lost. See [Reliquary](../../runites/reliquary.md).
 
 ## When to resonate
 
-- Before `artefact --invoke`, so the artefact carries today's casts.
+- Before `reliquary --runite-relic`, so the relic carries today's casts.
 - After you add or rename casts, to see the runite as others will see it.
 - To compare size and memory between two versions of your runite.
 
@@ -67,5 +67,5 @@ Only a spell, no cast — so `Chanter::end()` runs the `rune` cast (the main scr
 
 - `php cast --resonance` writes `.echoes/<runite>/rune.json`.
 - It holds the runite's casts, runes, size and memory.
-- The artefact carries it.
+- The relic carries it.
 - Next: [Crafter](crafter.md)

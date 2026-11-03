@@ -23,7 +23,7 @@ and reads the answer from the reply:
 ```json
 {"data": {"response": "..."}}
 ```
-So the familiar is a small service of yours (or your team's) that speaks this shape. Keep `familiar.json` out of git and out of artefacts — it holds a token.
+So the familiar is a small service of yours (or your team's) that speaks this shape. Keep `familiar.json` out of git and out of relics — it holds a token.
 
 ## In code
 ```php

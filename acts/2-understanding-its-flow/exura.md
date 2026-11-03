@@ -18,16 +18,15 @@ They are plain files. Crafter bundles them like any other shard.
 
 ## How you get it
 
-Exura comes as **shards of an Awakening template**. Start a new runite and choose a website template:
+Exura comes as **shards of a relic** in [`devneet-id/reliquary`](https://github.com/devneet-id/reliquary). Start a new runite and choose a website relic:
 
 ```
 $ php cast
->>> Begin anew, or use an artefact [y/n]: y
-[3] WEBSITE WITH EXURA(SD) TO VERCEL
- :: 2025-10-01 @Anwar Achilles [vercel, exuracss, exurajs, exuraphp]
-[4] WEBSITE WITH EXURA(SD)
- :: 2025-10-01 @Anwar Achilles [exuracss, exurajs, exuraphp]
->>> Where would you like to continue your journey? [ID]: 4
+>>> Use a relic from devneet-id/reliquary [y/n]: y
+[1] devneet-id/how-to-casting @0.1.0 [rune 1.11]
+ :: Learn how to cast: casts, spells, and cast in cast.
+[2] devneet-id/website-with-exura …
+>>> Where would you like to continue your journey? [ID]: 2
 [√] Awakening successfully.
 ```
 
@@ -106,7 +105,7 @@ Exura::module('GET', 'demo', function() {
 | Cast | Runes | Act |
 |---|---|---|
 | `build` | Crafter, Forger | this Act |
-| `store` | `Keeper::shard()` — keeps assets for the artefact | this Act |
+| `store` | `Keeper::shard()` — keeps assets for the relic | this Act |
 | `ready` | build + store, then `Forger::move()` into `ready/` | this Act |
 | `watch`, `serve`, `start` | Specter (observe, dev server, another window) | [Act 3](../3-liberation-of-forte/README.md) |
 
@@ -114,14 +113,13 @@ You can run `build` now. The Specter casts wait for Act 3.
 
 ## Known issues
 
-- On Linux and macOS, awakening the Exura templates writes the toolkit as files literally named `src/exura/\exura.css`, `\exura.js`, `\exura.php` (Windows paths inside the artefact). Rename them before you build, or the build runs without Exura:
+- On Linux and macOS, awakening the Exura templates writes the toolkit as files literally named `src/exura/\exura.css`, `\exura.js`, `\exura.php` (Windows paths inside the relic). Rename them before you build, or the build runs without Exura:
 
   ```bash
   cd src/exura && for f in '\exura.css' '\exura.js' '\exura.php'; do mv -n "$f" "${f#\\}"; done
   ```
 
   After that, `php cast build` gives `dist/index.php` with 8 shards.
-- `artefact --inspect` on these templates glitches (`Undefined array key "CAST"`); awakening them works.
 
 ## What you keep from this page
 

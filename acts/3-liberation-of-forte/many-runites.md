@@ -2,13 +2,13 @@
 
 > Several apps in one folder, each with its own memory.
 
-One folder can hold many runites. Each is its own world — its own casts, its own `AETHER_FILE`, its own memory — while they share the folder's `vendor/` and `@liberations/`.
+One folder can hold many runites. Each is its own world — its own casts, its own `AETHER_FILE`, its own memory — while they share the folder's `vendor/` and `@liberation/`.
 
 ## One folder, two apps
 ```
 my-app/
 ├── vendor/
-├── @liberations/
+├── @liberation/
 │   └── Ledger/          shared by every runite in liberation mode
 ├── cast                 month, pack
 ├── wallet               add, book
@@ -17,8 +17,8 @@ my-app/
     └── wallet/          memory of wallet (entries.json)
 ```
 ```bash
-php cast              # the main screen of cast
-php wallet            # the main screen of wallet — different casts
+php cast              # the main hall of cast
+php wallet            # the main hall of wallet — different casts
 php wallet book
 ```
 Nothing is mixed: `Keeper::item('entries')` in `wallet` never sees the items of `cast`.
@@ -42,4 +42,4 @@ Inside **one** runite you do not need this — `Chanter::cast('x --a=1')()` retu
 ## When to split
 - Two audiences (a user app and an admin tool) → two runites.
 - Two memories that must never mix → two runites.
-- Shared logic → not a runite: a [rune](engrave-a-rune.md) both runites invoke.
+- Shared logic → not a runite: a [rune](engrave-a-rune.md) both runites insert.

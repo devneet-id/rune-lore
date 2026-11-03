@@ -1,8 +1,8 @@
 # Cipher
 
-> Keeps secrets and identities of the system—unique ids, fast hashes, base64 and runic cipher that turns text into runes and back, used to seal artefacts.
+> Keeps secrets and identities of the system—unique ids, fast hashes, base64 and runic cipher that turns text into runes and back, used to seal relics.
 
-Cipher keeps the secrets of the system: unique ids, fast hashes, base64, and the **runic cipher** that turns text into runes and back. Artefacts are sealed with it.
+Cipher keeps the secrets of the system: unique ids, fast hashes, base64, and the **runic cipher** that turns text into runes and back. Relics are sealed with it.
 
 | | |
 |---|---|
@@ -80,4 +80,4 @@ Globals — state that changes as the flow goes on.
 - The runic cipher is a lore seal, not encryption.
 
 ---
-*Generated from `Cipher/Phantasm.php` (version 1.6). Read it live with `php cast grimoire --rune=Cipher`.*
+*Generated from `Cipher/Phantasm.php` (version 1.6). Read it live with `php cast grimoire --runic=Cipher`.*

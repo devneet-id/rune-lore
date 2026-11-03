@@ -37,7 +37,7 @@ Chanter::cast('build', function() {
 ```html
 <!DOCTYPE html>
 <html>
-<!-- RUNE 1.20.110 | Created By @anwarachilles -->
+<!-- RUNE 1.20.114 | Created By @anwarachilles -->
 <head>
 <title>Ember</title>
   <style>
@@ -147,7 +147,7 @@ Crafter::shard('src/hello.php');
 
 ```php
 <?php
-/* RUNE 1.20.110 | Created By @anwarachilles */
+/* RUNE 1.20.114 | Created By @anwarachilles */
 function hello( $name ) {
   return "Hello, $name.";
 }
@@ -171,7 +171,7 @@ Hello, Rune.
 
 ## Ship it
 
-The bundle is a plain file. Open the `.html` in a browser, serve the `.php` with any PHP server (`php -S localhost:8000 -t dist`), upload it, or put it in a release. To carry the runite that builds it, seal it as an [artefact](../../runites/artefact.md).
+The bundle is a plain file. Open the `.html` in a browser, serve the `.php` with any PHP server (`php -S localhost:8000 -t dist`), upload it, or put it in a release. To carry the runite that builds it, seal it as a [relic](../../runites/reliquary.md).
 
 ## What you keep from this page
 

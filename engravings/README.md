@@ -10,7 +10,7 @@ Every recipe is taken from runites that were run against Rune.
 | [Manage Files](files.md) | Act 1 |
 | [Seal a Secret](secrets.md) | Act 1 |
 | [HTML Report from Templates](report.md) | Act 1 |
-| [Share a Project as an Artefact](artefact.md) | Act 1 |
+| [Share a Project as a Relic](relic.md) | Act 1 |
 | [Test Your Runite](testing.md) | Act 0 |
 | [Bundle a Small Website](bundling.md) | Act 2 |
 | [Many Runites in One Folder](many-runites.md) | Act 3 |

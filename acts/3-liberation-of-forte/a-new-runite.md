@@ -2,7 +2,7 @@
 
 > Engrave an app from nothing — no template.
 
-Awakening gave you a runite from an artefact. Now you start from an empty file, the way the built-in runites were made. We engrave **wallet**: a ledger that remembers — Ledger counts, Keeper keeps.
+Awakening gave you a runite, blank or from a relic. Now you start from an empty file, the way the built-in runites were made. We engrave **wallet**: a ledger that remembers — Ledger counts, Keeper keeps.
 
 ## 1 · Plan before you engrave
 Write what the app does as casts and spells:
@@ -25,8 +25,8 @@ Rune\Ethereal::liberation();
 ```
 Write the [skeleton](../../runites/README.md) by hand — `use`, `#sentinel-manifest`, awaken, `#sentinel-awaken`, begin, `#sentinel-codex`, end — or write only the four runes and let Sentinel add the rest:
 ```bash
-php wallet sentinel --invoke=Keeper
-php wallet sentinel --invoke=Ledger
+php wallet sentinel --runite-insert=Keeper
+php wallet sentinel --runite-insert=Ledger
 ```
 (Then add `Keeper::begin()` / `Keeper::end()` yourself.)
 
@@ -111,6 +111,6 @@ On Linux and macOS, `chmod +x wallet` and run `./wallet book` — the shebang fi
 ## What to notice
 - **Runes do not know each other's memory.** Ledger lives in one flow; the runite glues it to Keeper (`wallet_load`, `wallet_save`). That glue belongs in the runite, not inside Ledger — one rune, one purpose.
 - **Small helpers are fine in a runite.** Prefix them with the runite's name (`wallet_*`) so they never meet a rune's names.
-- **The main screen is your help page.** The third argument of every `Chanter::cast()` is what users read.
+- **The main hall is your help page.** The third argument of every `Chanter::cast()` is what users read.
 
 Next: [Many Runites](many-runites.md).

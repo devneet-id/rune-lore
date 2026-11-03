@@ -48,7 +48,7 @@ Aether::end();                                    // 8. footer, then exit
 $ php cast hello --name=Anwar
 Hello, Anwar.
 
-◇Version=1.20.110: ϟExecute=0.0049s, ΞMemory=1.07MB - ^1.26MB
+◇Version=1.20.114: ϟExecute=0.0049s, ΞMemory=1.07MB - ^1.26MB
 ```
 
 ## Step by step
@@ -57,10 +57,10 @@ Hello, Anwar.
 |---|---|
 | **Awaken** | `ether()`, `essence()` and `entity()` each `require_once` one file of the rune (`Ether.php`, `Essence.php`, `Entity.php`) and add the rune to a list Aether keeps. The order matters: Ether defines the constants that Essence and Entity use. |
 | `Aether::begin()` | Cleans memory (`gc_collect_cycles`), empties the arcane, writes the first arcane line `Aether.manifest.begin`. |
-| `Chanter::begin()` | Loads the built-in casts from `@bindrune/chanter/`: `artefact`, `grimoire`, `rune`, `sentinel`. |
+| `Chanter::begin()` | Loads the built-in runites from `@runite/` (all but `awakening`): `grimoire`, `reliquary` (with the hidden `artefact` that points to it), `rune`, `sentinel`. |
 | `Keeper::begin()` | Makes `.echoes/<runite>/` (with `arcanes/`, `shards/`, `arcane.txt`, `shard.json`), empties `glitch.txt`, and starts catching glitches. |
-| `Chanter::cast(...)` | Stores the callable under its name and keeps its echo for the main screen. **Nothing runs yet.** |
-| `Chanter::end()` | Reads the command line, finds the cast and runs it. No cast given → the `rune` cast (the main screen). Only spells given (`php cast --resonance`) → `rune` with those spells. |
+| `Chanter::cast(...)` | Stores the callable under its name and keeps its echo for the main hall. **Nothing runs yet.** |
+| `Chanter::end()` | Reads the command line, finds the cast and runs it. No cast given → the `rune` cast (the main hall). Only spells given (`php cast --resonance`) → `rune` with those spells. |
 | `Keeper::end()` | Turns the arcane collected in memory into `arcane.txt` and a dated copy in `arcanes/`. |
 | `Aether::end()` | Adds up every Phantasm version for the footer, prints it, and **exits**. |
 

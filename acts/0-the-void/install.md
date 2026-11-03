@@ -24,7 +24,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 Rune\Ethereal::awakening();
 ```
-`Rune\Ethereal::awakening()` loads the built-in runite **Awakening** from the package (`@bindrune/awakening/`). That is all it does — the rest happens when you run it.
+`Rune\Ethereal::awakening()` loads the built-in runite **Awakening** from the package (`@runite/awakening/`). That is all it does — the rest happens when you run it.
 
 ## 4 · Awaken
 ```bash
@@ -33,17 +33,17 @@ php cast
 ```
 /////////////////////////////
  A W A K E N I N G
- awaken from the void
+ The Awakening of Void
 
-Will you begin from the first step,
-or from the strange artefact?
+Will you begin from the void,
+or from a relic of the reliquary?
 
->>> Begin anew, or use an artefact [y/n]: n
+>>> Use a relic from devneet-id/reliquary [y/n]: n
 Awakening successfully.
 ```
-Answer **`n`**. Awakening takes the **Blank Starter** artefact and writes its runite **over your `cast` file**. The awakening lines are gone; in their place is a runite with the four runes of this Act.
+Answer **`n`**. Awakening writes the **blank** runite **over your `cast` file** (*Act. 0 - The Awakening of Void*). The awakening lines are gone; in their place is a runite with the four runes of this Act.
 
-Answer `y` and you get a list of artefacts to choose from by ID: Blank Starter, How to Casting, and two Exura website templates. The Exura ones belong to Act 2. For this Act, choose Blank Starter.
+Answer `y` and you get the relics of [`devneet-id/reliquary`](https://github.com/devneet-id/reliquary) to choose from by ID — How to Casting, and the Exura website relics that belong to Act 2. It needs the internet; without it, Awakening offers the blank runite. For this Act, answer `n`.
 
 > To awaken again, put the three lines of step 3 back into `cast`.
 

@@ -6,7 +6,7 @@ Rune counts its own growth. Each rune carries a version in its Phantasm; the foo
 
 ## The footer
 ```
-◇Version=1.20.110: ϟExecute=0.0070s, ΞMemory=975.42KB - ^1.14MB
+◇Version=1.20.114: ϟExecute=0.0070s, ΞMemory=975.42KB - ^1.14MB
 ```
 `aether_version()` builds it, with **whole numbers** only:
 1. Split `AETHER_VERSION` into major and minor (`'1.11'` → `1` and `11`).
@@ -21,29 +21,29 @@ The ten origin runes today:
 | major | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | **9** |
 | minor | 18 | 14 | 6 | 13 | 14 | 13 | 3 | 9 | 7 | 13 | **110** |
 
-→ `1 . (11 + 9) . 110` = `Version=1.20.110`.
+→ `1 . (11 + 9) . 114` = `Version=1.20.114`.
 
-The footer (`aether_version(true)`) also counts runes in `@liberations/` in liberation mode (not those named like an origin rune), so your footer can be higher than the official one — that is expected. Everything that must match between machines counts the **origin runes only** (`aether_version()`): the artefact header, `rune.json`, the copyright line of a Crafter bundle, and the release tag.
+The footer (`aether_version(true)`) also counts runes in `@liberation/` in liberation mode (not those named like an origin rune), so your footer can be higher than the official one — that is expected. Everything that must match between machines counts the **origin runes only** (`aether_version()`): the artefact header, `rune.json`, the copyright line of a Crafter bundle, and the release tag.
 
 ## Raise a version
-Rule: **every change to a rune's Ether, Essence, Entity or Manifest raises that rune's Phantasm version.** `@bindrune/*` runites have no Phantasm and are not counted.
+Rule: **every change to a rune's Ether, Essence, Entity or Manifest raises that rune's Phantasm version.** The built-in runites of `@runite/` have no Phantasm and are not counted.
 
 From a liberation runite (see [The Workshop](the-workshop.md)):
 ```bash
-php liberate sentinel --phantasm-up=Weaver
+php liberate sentinel --phantasm-upgrade=Weaver
 ```
-`--phantasm-up` adds 1 to the minor: `1.7` → `1.8`, `1.9` → `1.10`. The footer's last number moves by one (`1.20.110` → `1.20.111`). Or edit `public $version` in `<Rune>/Phantasm.php` by hand — always `'<major>.<minor>'`, as a string.
+`--phantasm-upgrade` adds 1 to the minor: `1.7` → `1.8`, `1.9` → `1.10`. The footer's last number moves by one (`1.20.114` → `1.20.115`). Or edit `public $version` in `<Rune>/Phantasm.php` by hand — always `'<major>.<minor>'`, as a string.
 
-`--phantasm-fix` raises the version only when it changed the Phantasm (node, link or note). A link records the version of the rune it leans on, so raising Aether changes the links of the runes that use it.
+`--phantasm-repair` raises the version only when it changed the Phantasm (node, link or note). A link records the version of the rune it leans on, so raising Aether changes the links of the runes that use it.
 
 ## Why it only goes up
-- `--phantasm-up` on any rune → last number +1.
+- `--phantasm-upgrade` on any rune → last number +1.
 - A rune raises its major (`0.3` → `1.0`) → the middle number +1; the last may drop, and the version still goes up.
 - A new origin rune → middle + its major, last + its minor.
 - An origin rune removed → both drop: raise the minor of `AETHER_VERSION` enough to keep the version going up.
 - Never lower a version by hand.
 
 ## Version, tag, package
-- The footer `Version=` of a clean checkout (no `@liberations/`) is the **release tag**: `v1.20.110`.
+- The footer `Version=` of a clean checkout (no `@liberation/`) is the **release tag**: `v1.20.114`.
 - Packagist reads the tags. See [Release](release.md).
-- The version also guards artefacts: an artefact made with a newer Rune is refused on revoke — *This artefact needs Rune X, you have Y.*
+- The version also guards relics: a relic made with a newer Rune is refused when opened — *This relic needs Rune X, you have Y.*

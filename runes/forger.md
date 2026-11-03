@@ -97,4 +97,4 @@ Globals — state that changes as the flow goes on.
 - While Keeper is awake, files written by Forger are added to the shard list (`FORGER_KEEPER_SHARD`).
 
 ---
-*Generated from `Forger/Phantasm.php` (version 1.14). Read it live with `php cast grimoire --rune=Forger`.*
+*Generated from `Forger/Phantasm.php` (version 1.15). Read it live with `php cast grimoire --runic=Forger`.*

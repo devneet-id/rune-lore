@@ -101,4 +101,4 @@ Globals — state that changes as the flow goes on.
 - Crafter is the door to **Exura**, the simple toolkit for websites.
 
 ---
-*Generated from `Crafter/Phantasm.php` (version 1.13). Read it live with `php cast grimoire --rune=Crafter`.*
+*Generated from `Crafter/Phantasm.php` (version 1.14). Read it live with `php cast grimoire --runic=Crafter`.*

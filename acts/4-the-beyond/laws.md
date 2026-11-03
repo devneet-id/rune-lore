@@ -2,7 +2,7 @@
 
 > The rules Rune keeps. Break them and the flow breaks.
 
-These are not style tips. Every tool in Rune — Sentinel, Grimoire, the footer, artefacts — expects them. Keep them and the tools work for you.
+These are not style tips. Every tool in Rune — Sentinel, Grimoire, the footer, relics — expects them. Keep them and the tools work for you.
 
 ## The runes
 1. **One rune, one purpose.** A rune never does another rune's work. Need a different Weaver? Make a new rune with its own name (`MYWeaver`).
@@ -19,13 +19,13 @@ These are not style tips. Every tool in Rune — Sentinel, Grimoire, the footer,
 8. **Aether flows everywhere.** Runes are not standalone packages. Depending on Aether is the design.
 
 ## The contract
-9. **Every node has a `#NOTE`** on the line above it in the code — the Phantasm `node` list mirrors these notes (`sentinel --phantasm-fix-node`, `--phantasm-fix-note`).
+9. **Every node has a `#NOTE`** on the line above it in the code — the Phantasm `node` list mirrors these notes (`sentinel --phantasm-repair --mode=node`, `--mode=note`).
 10. **Every change raises the Phantasm version** of the rune that changed. See [Versioning](versioning.md).
 11. **Marks are VOID, BETA, EXIST.** VOID = empty: held back because dangerous, or voided until done. BETA = being shaped. EXIST = the opposite of VOID: whole and stable. There is **no DEVELOPMENT and no DEPRECATED** mark; Minister still carries DEVELOPMENT.
 
 ## Liberation
-12. **A liberation rune never replaces an origin rune.** The loader is appended, `--create-rune` refuses origin names, and Sentinel skips `@liberations/Whisper/` with a warning.
-13. **One home for your runes: `@liberations/`.** Not `@ethereal/`, not `<repo>/@bindrune/`.
+12. **A liberation rune never replaces an origin rune.** The loader is appended, `--runic-create` refuses origin names, and a folder like `@liberation/Whisper/` is never listed.
+13. **One home for your runes: `@liberation/`.** Not `@ethereal/`, not `@liberations/`, not `<repo>/@bindrune/`.
 
 ## Names and files
 14. **Lore name = code name.** A new word goes into the [Glossary](../../glossary.md) first; the code uses the same word.

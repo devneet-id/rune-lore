@@ -23,7 +23,7 @@ public $link = [
 Read it live:
 
 ```
-$ php cast grimoire --rune=Keeper
+$ php cast grimoire --runic=Keeper
   ::L I N K
     Aether ether 1.17
     Chanter entity 1.13

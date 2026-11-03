@@ -8,7 +8,7 @@ Specter keeps its memory in `.echoes`, so **Keeper must be engraved** (with `Kee
 
 ## Engrave it
 ```bash
-php cast sentinel --invoke=Specter
+php cast sentinel --runite-insert=Specter
 ```
 Then check that `Keeper::begin()` / `Keeper::end()` are in your runite ([Sentinel](../1-first-resonance/sentinel.md)).
 

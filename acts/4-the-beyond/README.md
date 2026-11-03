@@ -24,7 +24,7 @@ Until now you used Rune. From here you **keep** it. Every page in this Act point
 
 ## IV · Beyond
 10. [Every Repo Is a Runite](every-repo-is-a-runite.md) — Rune manages Rune; any repo can too
-11. [The Artefact Registry](artefact-registry.md) — templates from anywhere
+11. [The Reliquary](reliquary.md) — relics from anywhere, and the federation of reliquaries
 12. [Altar](altar.md) — the GUI to come
 13. [The Road Ahead](the-road-ahead.md) — where Rune is heading
 
@@ -33,7 +33,7 @@ Until now you used Rune. From here you **keep** it. Every page in this Act point
 find (issue, trial, known issue)
   → prove it   (a trial in your workshop)
   → change it  (Entity first, Manifest only forwards, #NOTE above every node)
-  → contract   (sentinel --phantasm-fix / --phantasm-up)
+  → contract   (sentinel --phantasm-repair / --phantasm-upgrade)
   → test       (php cast test, php cast trials)
   → commit     (type(scope): summary)
   → release    (tag = footer Version=)

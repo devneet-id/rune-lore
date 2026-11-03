@@ -44,7 +44,7 @@ $ php cast break
 
  #  T R A C E
 
-◇Version=1.20.110: ϟExecute=0.0095s, ΞMemory=1.09MB - ^1.27MB
+◇Version=1.20.114: ϟExecute=0.0095s, ΞMemory=1.09MB - ^1.27MB
 ```
 
 A warning is a glitch too — and it stops the flow just the same. Errors also carry a **trace**: the path the flow took to get there.

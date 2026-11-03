@@ -14,7 +14,7 @@ A rune does one thing. Whisper speaks, Weaver shapes text, Chanter listens to th
 | Where | the `devneet/rune` package | your project — a file named `cast` |
 | You | call them | engrave them |
 
-Writing a runite is called **engraving**. The built-in tools you will meet — Awakening, the main screen, Grimoire — are runites too, engraved by Rune's creator from the same runes you use. See [Runites](../../runites/README.md).
+Writing a runite is called **engraving**. The built-in tools you will meet — Awakening, the main hall, Grimoire — are runites too, engraved by Rune's creator from the same runes you use. See [Runites](../../runites/README.md).
 
 ## The ten origin runes
 | Rune | In one line | Act |

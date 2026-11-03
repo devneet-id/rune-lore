@@ -48,12 +48,12 @@ php cast test
 
 ## Work on a rune
 ```bash
-php liberate                                  # "The Liberation of Forte" on the main screen
-php liberate grimoire --rune=Weaver           # read the contract
-php liberate sentinel --phantasm-fix=Weaver   # node + link + note (+ version, only if changed)
-php liberate sentinel --phantasm-up=Weaver    # only raise the version
+php liberate                                  # "The Liberation of Forte" on the main hall
+php liberate grimoire --runic=Weaver              # read the contract
+php liberate sentinel --phantasm-repair=Weaver    # node + link + note (+ version, only if changed)
+php liberate sentinel --phantasm-upgrade=Weaver   # only raise the version
 ```
-`--phantasm-*` spells are refused outside liberation mode ("You are not eligible!!").
+`--phantasm-*` spells are refused outside liberation mode (*needs The Liberation of Forte*).
 
 ## Test the released version
 To check what users get, make another folder with its own `composer.json` and `composer require devneet/rune`. The same runite runs unchanged — only the autoload source differs.

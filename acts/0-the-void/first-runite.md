@@ -4,7 +4,7 @@
 
 The void answers when you speak to it. Run the runite you just awakened, then teach it one word of your own.
 
-## The main screen
+## The main hall
 ```bash
 php cast
 ```
@@ -16,28 +16,27 @@ php cast
  ♦ Echoes »
 
  #  D E F A U L T.
- ♦ php cast artefact
-    ≈ To handle with shard & artefact.
  ♦ php cast grimoire
-    ≈ will help you read the system structure
-      and flow.
- ♦ php cast rune
-    ≈ base of the rune
+    ≈ Read the runes and the arcane of this
+      runite.
+ ♦ php cast reliquary
+    ≈ Make, open and share relics (runite ⇄
+      .rune).
  ♦ php cast sentinel
-    ≈ Help you with maintain your runite as
+    ≈ Help you maintain your runite as an
       assistant.
 
  #  R E G I S T E R E D.
 
-◇Version=1.20.110: ϟExecute=0.0039s, ΞMemory=923.52KB - ^1.10MB
+◇Version=1.20.114: ϟExecute=0.0039s, ΞMemory=923.52KB - ^1.10MB
 ```
 *(The banner above STATS is left out here.)*
 
 - **STATS** — your runite, the folder, how many rune parts are awake. **Echoes** is empty: nothing is kept yet.
-- **DEFAULT** — the built-in casts that `Chanter::begin()` loaded.
+- **DEFAULT** — the built-in runites that `Chanter::begin()` loaded. The caption above them is *The Awakening of Void*.
 - **REGISTERED** — your own casts. Empty, for now.
 
-More: [the main screen](../../runites/rune.md).
+More: [the main hall](../../runites/rune.md).
 
 ## One cast, one spell
 Replace `// ✦ Main logic lives here` with:
@@ -84,7 +83,7 @@ Each run ends with the footer. Run `php cast` again: your cast now stands under 
 
 ## Read the footer
 ```
-◇Version=1.20.110: ϟExecute=0.0051s, ΞMemory=921.83KB - ^1.10MB
+◇Version=1.20.114: ϟExecute=0.0051s, ΞMemory=921.83KB - ^1.10MB
 ```
 The Rune version, how long it took, and how much memory it used. See [Begin and End](begin-and-end.md#the-footer).
 

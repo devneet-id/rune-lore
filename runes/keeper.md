@@ -16,7 +16,7 @@ Keeper is the memory of a runite. It keeps **echoes** in `.echoes/<runite>/`: it
 ## When to use
 - Engrave it: `Keeper::begin()` after `Chanter::begin()`, and `Keeper::end()` before `Aether::end()`.
 - Remember: `Keeper::item('name', $data)` / `Keeper::item('name')` (an object).
-- Carry files into an artefact: `Keeper::shard(['folder', 'file.txt'])`.
+- Carry files into a relic: `Keeper::shard(['folder', 'file.txt'])`.
 
 ## In code
 ```php
@@ -79,7 +79,7 @@ Constants — truth that never changes.
 | `KEEPER_ECHOES_GLITCH` | Path to the glitch log file for captured errors and exceptions. |
 | `KEEPER_ECHOES_ARCANES` | Directory for archived arcane logs. |
 | `KEEPER_ECHOES_SHARDS` | Directory for encoded shard backups. |
-| `KEEPER_ECHOES_SHARD` | Shard list of the runite (files carried into the artefact). |
+| `KEEPER_ECHOES_SHARD` | Shard list of the runite (files carried into the relic). |
 | `KEEPER_SAVING_ECHOES` | Flag bit for Keeper::begin(): save echoes. |
 | `KEEPER_SHOW_GLITCH` | Flag bit for Keeper::begin(): show glitch screen. |
 
@@ -93,11 +93,11 @@ Globals — state that changes as the flow goes on.
 | `$KEEPER_SAVING_ACTIVE` | Whether Keeper is saving echoes in this flow. |
 
 ## Notes
-- Without `Keeper::begin()` the `.echoes` folder does not exist and `Keeper::item()` saves nothing (it still returns `true`). `sentinel --invoke=Keeper` does not add `begin`/`end` for you.
+- Without `Keeper::begin()` the `.echoes` folder does not exist and `Keeper::item()` saves nothing (it still returns `true`). `sentinel --runite-insert=Keeper` does not add `begin`/`end` for you.
 - Every runite has its own folder next to itself: `.echoes/cast/`, `.echoes/ember/`… — the same folder whether it is cast from inside or from a parent folder.
 - Shards are paths relative to the runite's folder (`Keeper::shard(['weaver'])`); only files inside that folder are carried.
 - Arcane states by step time: BURST, FLASH, FLOW, FALL, BREAK, COLLAPSE, OVERCLOCK.
 - Known issue: writing with `Keeper::echo()` glitches; read works.
 
 ---
-*Generated from `Keeper/Phantasm.php` (version 1.13). Read it live with `php cast grimoire --rune=Keeper`.*
+*Generated from `Keeper/Phantasm.php` (version 1.13). Read it live with `php cast grimoire --runic=Keeper`.*

@@ -9,10 +9,10 @@ Look back at how Rune is kept. It is tested by runites. Its contract is fixed by
 |---|---|
 | test every change | a `test` cast in every scenario runite ([The Workshop](the-workshop.md)) |
 | measure what is tested | a runite that counts the Phantasm nodes the trials touch |
-| keep each contract true | `sentinel --phantasm-fix` (from a liberation runite) |
-| version the whole | `sentinel --phantasm-up` + the footer `Version=` |
-| read the docs | `grimoire --rune-all` |
-| pack and share | `artefact --invoke` |
+| keep each contract true | `sentinel --phantasm-repair` (from a liberation runite) |
+| version the whole | `sentinel --phantasm-upgrade` + the footer `Version=` |
+| read the docs | `grimoire --runic-list` |
+| pack and share | `reliquary --runite-relic`, and a reliquary |
 
 None of this is a separate tool. Each one is a runite made of the same runes you use.
 
@@ -48,9 +48,9 @@ Chanter::cast('clean', function() {
 Chanter::end();
 Aether::end();
 ```
-- Build with Crafter, serve with Specter, remember with Keeper, ship with an artefact.
+- Build with Crafter, serve with Specter, remember with Keeper, ship with a relic.
 - A derived repo grows its own runite app — with its own casts — that manages that repo.
-- In liberation mode the repo can grow its own runes in `@liberations/`.
+- In liberation mode the repo can grow its own runes in `@liberation/`, and keep its relics in `@federation/`.
 
 ## The shape of it
 ```
@@ -58,7 +58,7 @@ rune (origin runes)
  └── a runite      — keeps rune itself
       └── your repo
            └── its runite   — keeps your repo
-                └── its runes (@liberations/)
+                └── its runes (@liberation/)
                      └── …
 ```
 Each level uses the same five subjects and the same laws. That is the whole point of [Liberation](../3-liberation-of-forte/liberation.md): only the paradigm stays; everything else is yours.

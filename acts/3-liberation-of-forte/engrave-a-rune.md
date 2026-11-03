@@ -143,7 +143,7 @@ $ php cast month
 - IDR 300,000  internet
 = IDR 3,450,000
 ```
-(The runite must [invoke](use-your-rune.md) Ledger first.)
+(The runite must [insert](use-your-rune.md) Ledger first.)
 
 ## The laws, again
 - One rune, one purpose.

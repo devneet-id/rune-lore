@@ -2,11 +2,11 @@
 
 > Your rune is a rune like any other.
 
-Once it has a Phantasm, Ledger walks the same paths as Whisper or Keeper: Sentinel invokes it, the runite awakens it, the Grimoire reads it, the footer counts it.
+Once it has a Phantasm, Ledger walks the same paths as Whisper or Keeper: Sentinel inserts it, the runite awakens it, the Grimoire reads it, the footer counts it.
 
-## Invoke
+## Insert
 ```bash
-php cast sentinel --invoke=ledger
+php cast sentinel --runite-insert=Ledger
 ```
 Sentinel writes the two lines at the markers:
 ```php
@@ -16,18 +16,18 @@ use Rune\Ledger\Manifest as Ledger;
 Ledger::ether()::essence()::entity();
 #sentinel-awaken
 ```
-`--revoke=Ledger` takes them out again.
+`--runite-remove=Ledger` takes them out again.
 
 ## Read it in the Grimoire
 ```bash
-php cast grimoire --rune=Ledger
+php cast grimoire --runic=Ledger
 ```
 ```
  #  L E D G E R —— 0.2
 Keeps a small ledger of income and expense in one flow.
 
   [M] Rune\Ledger\Manifest
-  [O] …/@liberations/Ledger
+  [O] …/@liberation/Ledger
   [U] Anwar
 
   ::L I N K
@@ -45,15 +45,15 @@ The header warns *Carefull use rune BETA/DEPRECATED* — your rune is BETA until
 ## It counts
 - `aether_list_runes()` now ends with `Ledger`.
 - The footer `Version=` includes Ledger's version.
-- The main screen still shows the same casts — a rune adds powers, not casts. Casts come from your runite.
+- The main hall still shows the same casts — a rune adds powers, not casts. Casts come from your runite.
 
 ## Remove
 ```bash
-php cast sentinel --remove-rune=ledger
+php cast sentinel --runic-delete=Ledger
 ```
-Deletes `@liberations/Ledger/` and revokes it from the runite. Only liberation runes can be removed; origin runes stay.
+Deletes `@liberation/Ledger/` and removes it from the runite. Only liberation runes can be removed; origin runes stay.
 
 ## From your rune to Rune
 A liberation rune is private until you share it. Two ways out:
-- **With an app** — it travels as shards inside an artefact ([Share It](share-it.md)).
+- **With an app** — it travels as shards inside a relic ([Share It](share-it.md)).
 - **To Rune itself** — when it proves its purpose, it can be proposed as a new origin rune ([Contributing](../4-the-beyond/contributing.md)).

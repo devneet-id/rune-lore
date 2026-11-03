@@ -17,7 +17,7 @@ Format: `type(scope): summary` — lower case, English, no full stop, about six 
 | `refactor` | tidy without changing behaviour |
 | `chore` | remove, clean up |
 
-Scope = the rune or runite changed: `aether`, `whisper`, `weaver`, `chanter`, `forger`, `cipher`, `keeper`, `crafter`, `specter`, `minister`, `rune`, `grimoire`, `sentinel`, `artefact`, `awakening`, `readme`. Many places → no scope (`fix: ...`). Reasons go in the PR, not the commit title.
+Scope = the rune or runite changed: `aether`, `whisper`, `weaver`, `chanter`, `forger`, `cipher`, `keeper`, `crafter`, `specter`, `minister`, `rune`, `grimoire`, `sentinel`, `reliquary`, `awakening`, `readme`. Many places → no scope (`fix: ...`). Reasons go in the PR, not the commit title.
 ```bash
 git add "Chanter/Entity.php"
 git commit -m "fix(chanter): keep notes on casts with spells" -m "Notes are stored by cast name, so a cast with spells now shows its note."
@@ -25,13 +25,13 @@ git commit -m "fix(chanter): keep notes on casts with spells" -m "Notes are stor
 Do not forget the Phantasm bump of every rune you changed ([Versioning](versioning.md)).
 
 ## 2. Read the version
-Run any runite on the clean branch and read `Version=`. That is the tag: `Version=1.20.110` → `v1.20.110`. Read it from a runite without liberation mode — liberation runes count in the footer, not in the release.
+Run any runite on the clean branch and read `Version=`. That is the tag: `Version=1.20.114` → `v1.20.114`. Read it from a runite without liberation mode — liberation runes count in the footer, not in the release.
 
 ## 3. Publish on GitHub
 Repo `devneet-id/rune`, branch `1.x`.
 1. **Releases → Draft a new release**.
-2. Tag `v1.20.110` (create on publish) · target `1.x` · previous tag (e.g. `v1.12.31`).
-3. Title: `v1.20.110 — <a name>` (e.g. *Cleansing of the Runes*).
+2. Tag `v1.20.114` (create on publish) · target `1.x` · previous tag (e.g. `v1.12.31`).
+3. Title: `v1.20.114 — <a name>` (e.g. *Cleansing of the Runes*).
 4. Description: short, in English — summary, highlights, rune versions, breaking changes, full changelog link.
 5. **Publish release**. GitHub adds the source `zip` and `tar.gz` itself.
 

@@ -4,7 +4,7 @@
 
 A **cast** is a command spoken to the runite. A **spell** is a word that shapes it. Before you engrave your own, learn to speak to one.
 
-## The main screen
+## The main hall
 Run the runite with no cast:
 
 ```bash
@@ -19,25 +19,24 @@ php cast
  ♦ Echoes »
 
  #  D E F A U L T.
- ♦ php8 cast artefact
-    ≈ To handle with shard & artefact.
  ♦ php8 cast grimoire
-    ≈ will help you read the system structure
-      and flow.
- ♦ php8 cast rune
-    ≈ base of the rune
+    ≈ Read the runes and the arcane of this
+      runite.
+ ♦ php8 cast reliquary
+    ≈ Make, open and share relics (runite ⇄
+      .rune).
  ♦ php8 cast sentinel
-    ≈ Help you with maintain your runite as
+    ≈ Help you maintain your runite as an
       assistant.
 
  #  R E G I S T E R E D.
  ♦ php8 cast greet --name --loud
     ≈ Greet someone. --name=Anwar --loud
 
-◇Version=1.20.110: ϟExecute=0.0038s, ΞMemory=926.56KB - ^1.10MB
+◇Version=1.20.114: ϟExecute=0.0038s, ΞMemory=926.56KB - ^1.10MB
 ```
 
-- **DEFAULT** — the built-in casts every runite has: [artefact](../../runites/artefact.md), [grimoire](../../runites/grimoire.md), [rune](../../runites/rune.md), [sentinel](../../runites/sentinel.md).
+- **DEFAULT** — the built-in runites every runite has: [grimoire](../../runites/grimoire.md), [reliquary](../../runites/reliquary.md), [sentinel](../../runites/sentinel.md). The main hall itself is the hidden cast [rune](../../runites/rune.md).
 - **REGISTERED** — the casts *you* engrave.
 - The `≈` line is the cast's **echo**: what it says of itself.
 

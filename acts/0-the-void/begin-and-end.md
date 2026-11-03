@@ -20,7 +20,7 @@ Aether::end();
 | Step | What happens |
 |---|---|
 | `Aether::begin()` | the flow opens: memory is tidied and the trace of this run starts fresh |
-| `Chanter::begin()` | the built-in casts are loaded from `@bindrune/chanter/` — `rune`, `grimoire`, `artefact`, `sentinel` |
+| `Chanter::begin()` | the built-in runites are loaded from `@runite/` — `rune`, `grimoire`, `reliquary`, `sentinel` |
 | your casts | `Chanter::cast('greet', fn, …)` **registers** a cast. Nothing runs yet. |
 | `Chanter::end()` | reads the command line and runs the cast you asked for |
 | `Aether::end()` | prints the footer and **exits** |
@@ -30,7 +30,7 @@ So a cast is only a promise until `Chanter::end()`. And `Aether::end()` is truly
 ### Which cast runs
 | You type | Chanter runs |
 |---|---|
-| `php cast` | `rune` — the main screen |
+| `php cast` | `rune` — the main hall |
 | `php cast greet` | your cast `greet` |
 | `php cast --name=x` (only spells) | `rune` with those spells |
 | `php cast gret` | no such cast: `[!]WARNING: Chanter cast with 'gret' not found.` then `[i]INFO: You mean: greet,` |
@@ -48,7 +48,7 @@ So a cast is only a promise until `Chanter::end()`. And `Aether::end()` is truly
 ## The footer
 Every run ends with one line:
 ```
-◇Version=1.20.110: ϟExecute=0.0040s, ΞMemory=926.73KB - ^1.10MB
+◇Version=1.20.114: ϟExecute=0.0040s, ΞMemory=926.73KB - ^1.10MB
 ```
 | Sign | Meaning |
 |---|---|
@@ -56,7 +56,7 @@ Every run ends with one line:
 | `ϟExecute=` | how long the run took |
 | `ΞMemory=` | memory used, and `^` the peak |
 
-The version grows every time a rune changes, so the footer tells you which Rune you are running. More in [the main screen](../../runites/rune.md#the-footer).
+The version grows every time a rune changes, so the footer tells you which Rune you are running. More in [the main hall](../../runites/rune.md#the-footer).
 
 ## Old names
 Older code and comments use `arise()`, `_arise()` and `_aether_end()`. Today they are `begin()` and `end()`.

@@ -39,7 +39,7 @@ runite : cast
 echoes : cast
 hash   : 81816020bfa33c0a
 size   : 2.77KB
-casts  : artefact, grimoire, rune, sentinel, hello, break, warn, ...
+casts  : grimoire, reliquary, artefact, rune, sentinel, hello, break, warn, ...
 ```
 
 ## When to go deeper
@@ -66,7 +66,7 @@ Inside a function, reach an Essence with `global $NAME;` or `$GLOBALS['NAME']`.
 Every node is in the Phantasm. Read one rune at a time:
 
 ```
-$ php cast grimoire --rune=Cipher
+$ php cast grimoire --runic=Cipher
 ```
 
 Or open the reference: [runes/](../../runes/README.md) lists every Manifest method, Entity function, Ether constant and Essence global, rune by rune.

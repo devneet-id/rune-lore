@@ -94,4 +94,4 @@ Globals — state that changes as the flow goes on.
 - Known issue: `weaver_item($file, [...])` with data glitches; bind the result with `Weaver::bind()` instead.
 
 ---
-*Generated from `Weaver/Phantasm.php` (version 1.7). Read it live with `php cast grimoire --rune=Weaver`.*
+*Generated from `Weaver/Phantasm.php` (version 1.7). Read it live with `php cast grimoire --runic=Weaver`.*

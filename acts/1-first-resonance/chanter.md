@@ -9,7 +9,7 @@ You met casts as a user. Now engrave them. → Reference: [Chanter](../../runes/
 
 - `$cast` — the name, then every spell it reads: `'note --add --edit --remove --text'`.
 - `$fn` — what it does.
-- `$echo` — the `≈` line on the main screen.
+- `$echo` — the `≈` line on the main hall.
 
 Casts are only **registered** here. `Chanter::end()` runs the one you typed.
 

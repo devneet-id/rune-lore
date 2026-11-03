@@ -67,4 +67,4 @@ Globals — state that changes as the flow goes on.
 - Minister is still being shaped; its mark will follow the VOID pattern.
 
 ---
-*Generated from `Minister/Phantasm.php` (version 0.3). Read it live with `php cast grimoire --rune=Minister`.*
+*Generated from `Minister/Phantasm.php` (version 0.3). Read it live with `php cast grimoire --runic=Minister`.*

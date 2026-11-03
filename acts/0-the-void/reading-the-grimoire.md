@@ -8,11 +8,11 @@ The Grimoire is a book that feels alive. It does not open a rune's code — it r
 ```bash
 php cast grimoire
 ```
-It lists what it can read: `--rune`, `--rune-all`, `--arcane`, `--arcane-clean`.
+It lists what it can read, in two groups: RUNIC `--runic`, `--runic-list` and ARCANE `--arcane`, `--arcane-clean`.
 
 ## Read one rune
 ```bash
-php cast grimoire --rune=Weaver
+php cast grimoire --runic=Weaver
 ```
 ```
  #  W E A V E R —— 1.7
@@ -60,8 +60,8 @@ The **Phantasm** is the whole page.
 
 ## Read further
 ```bash
-php cast grimoire --rune=Whisper     # the voice: see its link to Weaver
-php cast grimoire --rune-all         # all ten origin runes, one after another
+php cast grimoire --runic=Whisper    # the voice: see its link to Weaver
+php cast grimoire --runic-list       # all ten origin runes, one after another
 ```
 The Grimoire reads any origin rune, even one your runite has not awakened. Look ahead at the runes of later Acts if you like — reading is free.
 

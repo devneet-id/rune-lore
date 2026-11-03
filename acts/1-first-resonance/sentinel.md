@@ -4,14 +4,14 @@
 
 → Reference: [sentinel](../../runites/sentinel.md)
 
-## Invoke three runes
+## Insert three runes
 ```bash
-php cast sentinel --invoke=Forger
-php cast sentinel --invoke=Cipher
-php cast sentinel --invoke=Keeper
+php cast sentinel --runite-insert=Forger
+php cast sentinel --runite-insert=Cipher
+php cast sentinel --runite-insert=Keeper
 ```
 ```
-[√] Successfully do Invoked with 'Keeper'
+[√] Inserted 'Keeper' to cast
 ```
 
 ## What changed in the file
@@ -57,9 +57,14 @@ What opens later closes earlier.
 
 ## Take a rune out
 ```bash
-php cast sentinel --revoke=Cipher
+php cast sentinel --runite-remove=Cipher
 ```
 
-Removes both lines again. `--invoke=Keeper.entity` and `--revoke=Keeper.essence` work on one part only.
+Removes both lines again. `--runite-insert=Keeper.entity` and `--runite-remove=Keeper.essence` work on one part only.
+
+While you are here, keep `vendor/` and `.echoes/` out of git:
+```bash
+php cast sentinel --gitignore
+```
 
 Next: [Keeper](keeper.md).
